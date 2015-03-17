@@ -1,7 +1,11 @@
 create table Produto(
-	id int not null, 
-	nome varchar(100) not null, 
-	sku varchar(10) not null, 
-	valorUnitario decimal,
-	estoque int,
-	gondola int);
+	produto_oid int NOT NULL,
+	nome varchar(60) NOT NULL,
+	quantidadeDepo int,
+	valorCompra decimal,
+	valorVenda decimal,
+	pontoReposicao int,
+	quantMaxGondola int,
+	quantMinGondola int,
+	PRIMARY KEY (produto_oid)
+	);

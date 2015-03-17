@@ -8,12 +8,12 @@
 		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.2.xsd">
 
 	<!-- Database -->
-	<jdbc:embedded-database id="datasource" type="H2"></jdbc:embedded-database>
+	<jdbc:embedded-database id="h2Datasource" type="H2"></jdbc:embedded-database>
 
 	<!-- Entity Manager -->
 	<bean id="entityManagerFactory"
 		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
-		<property name="dataSource" ref="datasource" />
+		<property name="dataSource" ref="h2Datasource" />
 		<property name="persistenceUnitName" value="varejo-test" />
 	</bean>
 
@@ -23,5 +23,6 @@
 	</bean>
 	
 	<!-- Jpa Repositories -->
-	<jpa:repositories base-package="com.br.projetandoo.vdigitalRefact.repositories"></jpa:repositories>
+	<jpa:repositories base-package="com.br.projetandoo.vdigital.repositories">
+	</jpa:repositories>
 </beans>

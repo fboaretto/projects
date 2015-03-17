@@ -2,76 +2,114 @@ package com.br.projetandoo.vdigital.entities;
 
 import java.math.BigDecimal;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Produto {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer id;
-
+	@Column(name="produto_oid")
+	private Integer oid;
+	
 	private String nome;
+	
+	private Integer quantidadeDepo;
 
-	private String sku;
+	private BigDecimal valorCompra;
+	
+	private BigDecimal valorVenda;
+	
+	private Integer pontoReposicao;
+	
+	private Integer quantMaxGondola;
+	
+	private Integer quantMinGondola;
 
-	private BigDecimal valorUnitario;
-
-	private Integer estoque;
-
-	private Integer gondola;
 
 	public String toString() {
-		return "Produto " + getId() + " : " + getNome() + " [" + getSku()
-				+ "] quant.estoque:" + getEstoque() + " quant.gondola:"
-				+ getGondola();
+		return "Produto [" + getOid() + "]: " + getNome();
 	}
+
+	
+	public Integer getOid() {
+		return oid;
+	}
+
+
+	public void setOid(Integer oid) {
+		this.oid = oid;
+	}
+
 
 	public String getNome() {
 		return nome;
 	}
 
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
-	public String getSku() {
-		return sku;
+
+	public Integer getQuantidadeDepo() {
+		return quantidadeDepo;
 	}
 
-	public void setSku(String sku) {
-		this.sku = sku;
+
+	public void setQuantidadeDepo(Integer quantidadeDepo) {
+		this.quantidadeDepo = quantidadeDepo;
 	}
 
-	public BigDecimal getValorUnitario() {
-		return valorUnitario;
+
+	public BigDecimal getValorCompra() {
+		return valorCompra;
 	}
 
-	public void setValorUnitario(BigDecimal valorUnitario) {
-		this.valorUnitario = valorUnitario;
+
+	public void setValorCompra(BigDecimal valorCompra) {
+		this.valorCompra = valorCompra;
 	}
 
-	public Integer getEstoque() {
-		return estoque;
+
+	public BigDecimal getValorVenda() {
+		return valorVenda;
 	}
 
-	public void setEstoque(Integer estoque) {
-		this.estoque = estoque;
+
+	public void setValorVenda(BigDecimal valorVenda) {
+		this.valorVenda = valorVenda;
 	}
 
-	public Integer getGondola() {
-		return gondola;
+
+	public Integer getPontoReposicao() {
+		return pontoReposicao;
 	}
 
-	public void setGondola(Integer gondola) {
-		this.gondola = gondola;
+
+	public void setPontoReposicao(Integer pontoReposicao) {
+		this.pontoReposicao = pontoReposicao;
 	}
 
-	public Integer getId() {
-		return id;
+
+	public Integer getQuantMaxGondola() {
+		return quantMaxGondola;
+	}
+
+
+	public void setQuantMaxGondola(Integer quantMaxGondola) {
+		this.quantMaxGondola = quantMaxGondola;
+	}
+
+
+	public Integer getQuantMinGondola() {
+		return quantMinGondola;
+	}
+
+
+	public void setQuantMinGondola(Integer quantMinGondola) {
+		this.quantMinGondola = quantMinGondola;
 	}
 
 }

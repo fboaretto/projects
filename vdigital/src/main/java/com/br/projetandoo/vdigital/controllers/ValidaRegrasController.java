@@ -1,13 +1,17 @@
 package com.br.projetandoo.vdigital.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 
-public class AnalisaRegrasController {
-	
-	/*vai casar as regras da tabela 'regras' do banco de regras
-	 * com informaçoes do banco de estoque(advindas das queries
-	 * do ProdutoDao)
-	 * */
+import com.br.projetandoo.vdigital.repositories.ProdutoRepository;
 
+public class ValidaRegrasController {
+
+	@Autowired
+	ProdutoRepository repository;
 	
-	
+	public String validaQuantidadeDepositoAbaixoEsperado(){
+		
+		return ""; 
+	}
+
 }

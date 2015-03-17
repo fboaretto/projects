@@ -1,4 +1,4 @@
-package com.br.projetandoo.vdigital;
+package com.br.projetandoo.vdigital.repositories;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -25,14 +25,12 @@ public class ProdutoRepositoryTest {
 	public void test() {
 		Produto produto = new Produto();
 		produto.setNome("COCA COLA");
-		produto.setSku("CC01");
-		produto.setEstoque(200);
-		produto.setGondola(50);
-		produto.setValorUnitario(BigDecimal.valueOf(4.50));
+		produto.setValorCompra(BigDecimal.valueOf(2.0));
+		//produto.setValorVenda(BigDecimal.valueOf(5.0));
 		
 		repository.save(produto);
 		
-		Produto dbproduto = repository.findOne(produto.getId());
+		Produto dbproduto = repository.findOne(produto.getOid());
 		assertNotNull(dbproduto);
 		System.out.println(dbproduto.toString());
 	}
