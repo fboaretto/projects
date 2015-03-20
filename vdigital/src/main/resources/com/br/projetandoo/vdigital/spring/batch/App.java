@@ -1,4 +1,4 @@
-package com.br.projetandoo.vdigital;
+package com.br.projetandoo.vdigital.spring.batch;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
