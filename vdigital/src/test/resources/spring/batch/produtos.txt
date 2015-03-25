@@ -1,0 +1,6 @@
+produto_oid,nome,quantidadeDepo,valorCompra,valorVenda,pontoReposicao,quantMaxGondola,quantMinGondola
+1001,Coca-Cola(1L),500,1.00,3.50,200,10,10
+1002,Pepsi-Cola(1L),400,1.00,3.20,120,10,10
+1003,Nescau(350g),400,0.80,2.50,150,10,10
+1004,Skol - lata(350ml),400,0.60,1.49,200,10,10
+1005,presunto #Sadia pacote de 500g,300,1.19,3.29,80,10,10

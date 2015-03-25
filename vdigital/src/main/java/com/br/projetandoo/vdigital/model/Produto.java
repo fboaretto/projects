@@ -1,4 +1,4 @@
-package com.br.projetandoo.vdigital.entities;
+package com.br.projetandoo.vdigital.model;
 
 import java.math.BigDecimal;
 

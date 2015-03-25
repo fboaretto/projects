@@ -9,9 +9,9 @@ import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class App {
+public class ImportaProdutos {
 	
-	static Logger LOG = LoggerFactory.getLogger(App.class);
+	static Logger LOG = LoggerFactory.getLogger(ImportaProdutos.class);
 
 	public static void main(String[] args) {
 		
