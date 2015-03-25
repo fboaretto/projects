@@ -50,7 +50,7 @@ public class ImportaProdutosTest {
 	}
 
 
-	@Test
+	//@Test
 	public void testImportaProdutos_todosSalvosComSucesso() throws Exception {
 
 		jobLauncher.run(job,

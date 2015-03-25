@@ -5,11 +5,16 @@
 						   http://www.springframework.org/schema/beans
 						   http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
 
+	<bean id="produtoItemLogger" class="com.br.projetandoo.vdigital.spring.batch.ProdutoItemListener" />
+
 	<!-- xmlns 'inline' para evitar namespaces como 'batch:job', 'batch:step',... -->
 	<job id="importaProdutosJob" xmlns="http://www.springframework.org/schema/batch">
 		<step id="importaProdutos">
 			<tasklet>
 				<chunk reader="itemReader" writer="itemWriter" commit-interval="2" />
+				<listeners>
+					<listener ref="produtoItemLogger" />
+				</listeners>
 			</tasklet>
 		</step>
 	</job>
