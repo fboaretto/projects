@@ -12,7 +12,7 @@ import com.br.projetandoo.vdigital.model.Produto;
 
 public class ProdutoFieldSetMapper implements FieldSetMapper<Produto> {
 	
-	private static final Logger LOG = LoggerFactory.getLogger(ImportaProdutosTest.class);
+	private static final Logger LOG = LoggerFactory.getLogger(ProdutoFieldSetMapper.class);
 	
 	public Produto mapFieldSet(FieldSet fieldSetParam) throws BindException {
 		
@@ -23,7 +23,7 @@ public class ProdutoFieldSetMapper implements FieldSetMapper<Produto> {
 			produto.setNome(fieldSetParam.readString("nome"));
 			produto.setQuantidadeDepo(fieldSetParam.readInt("quantidadeDepo"));
 			produto.setValorCompra(fieldSetParam.readBigDecimal("valorCompra"));
-			produto.setValorCompra(fieldSetParam.readBigDecimal("valorVenda"));
+			produto.setValorVenda(fieldSetParam.readBigDecimal("valorVenda"));
 			produto.setPontoReposicao(fieldSetParam.readInt("pontoReposicao"));
 			produto.setQuantMaxGondola(fieldSetParam.readInt("quantMaxGondola"));
 			produto.setQuantMinGondola(fieldSetParam.readInt("quantMinGondola"));

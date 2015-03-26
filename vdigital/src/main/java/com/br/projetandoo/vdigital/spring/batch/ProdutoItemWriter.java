@@ -14,13 +14,14 @@ public class ProdutoItemWriter implements ItemWriter<Produto> {
 	private JdbcTemplate jdbcTemplate;
 	
 	private static final String INSERT_PRODUTO = 
-			"INSERT INTO Produto(produto_oid,nome,quantidadeDepo,valorCompra,valorVenda,pontoReposicao,quantMaxGondola,quantMinGondola)"
+			"INSERT INTO Produto(produto_oid,nome,quantidadeDepo,valorCompra,"
+			+ "valorVenda,pontoReposicao,quantMaxGondola,quantMinGondola)"
 					+ "values(?,?,?,?,?,?,?,?)";
 
 	private static final String UPDATE_PRODUTO = 
 			"update Produto SET nome=?, quantidadeDepo=?, valorCompra=?, valorVenda=?,"
 					+ " pontoReposicao=?, quantMaxGondola=?, quantMinGondola=?"
-					+ "where produto_oid = ?";
+					+ " where produto_oid=?";
 	
 	
 	public ProdutoItemWriter(DataSource dataSource) {

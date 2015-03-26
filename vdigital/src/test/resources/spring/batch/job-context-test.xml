@@ -7,6 +7,7 @@
 	<bean id="jobRepository"
 		class="org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean">
 		<property name="transactionManager" ref="transactionManager" />
+		<!-- necessario?<property name="databaseType" value="H2" /> -->
 	</bean>
 
 	<bean id="jobLauncher"

@@ -15,13 +15,14 @@
 		<property name="password" value="fedoramysql82" />
 	</bean>
 
-	<bean id="transactionManager"
+	<bean id="transactionManager" name="resourcelessTransaction"
 		class="org.springframework.batch.support.transaction.ResourcelessTransactionManager" />
 
 	<!-- create job-meta tables automatically -->
 	<jdbc:initialize-database data-source="dataSource">
 		<jdbc:script location="org/springframework/batch/core/schema-drop-mysql.sql" />
 		<jdbc:script location="org/springframework/batch/core/schema-mysql.sql" />
+		<jdbc:script location="spring/batch/create-produto.sql" />
 	</jdbc:initialize-database>
 
 </beans>
