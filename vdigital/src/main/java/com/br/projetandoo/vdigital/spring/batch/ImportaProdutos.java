@@ -16,7 +16,7 @@ public class ImportaProdutos {
 	@Value("file:src/main/resources/spring/batch/produtos.txt")
 	private static Resource produtosResource;
 	
-	private static String produtosString = "src/main/resources/spring/batch/produtos.txt";
+	private static String produtosString = "src/main/resources/spring/batch/fileset/produtos.txt";
 
 	private static final Logger LOG = LoggerFactory.getLogger(ImportaProdutos.class);
 	

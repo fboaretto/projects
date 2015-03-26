@@ -12,8 +12,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<flyway.database.url>jdbc:mysql://localhost:3306/varejo</flyway.database.url>
-		<flyway.password>fedoramysql82</flyway.password>
+		<flyway.database.url>jdbc:mysql://localhost:3306/varejoDev</flyway.database.url>
+		<flyway.password>user2015</flyway.password>
 	</properties>
 
 	<dependencyManagement>
