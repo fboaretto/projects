@@ -6,20 +6,17 @@ import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;
 import org.springframework.batch.core.JobParametersBuilder;
 import org.springframework.batch.core.launch.JobLauncher;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 
 public class ImportaProdutos {
 	
-	@Value("file:src/main/resources/spring/batch/produtos.txt")
-	private static Resource produtosResource;
-	
-	private static String produtosString = "src/main/resources/spring/batch/fileset/produtos.txt";
+	private static Resource produtosResource = new FileSystemResource(
+			"src/main/resources/spring/batch/fileset/produtos.txt");
 
 	private static final Logger LOG = LoggerFactory.getLogger(ImportaProdutos.class);
-	
 
 	public static void main(String[] args) {
 
@@ -33,20 +30,18 @@ public class ImportaProdutos {
 
 		JobLauncher jobLauncher = (JobLauncher) context.getBean("jobLauncher");
 		Job job = (Job) context.getBean("importaProdutosJob");
-		
+
 		try {
 			JobParametersBuilder jPBuilber = new JobParametersBuilder();
-			jPBuilber.addString("inputFile", produtosString);
-			
+			jPBuilber.addString("inputFile", produtosResource.getFile().getAbsolutePath());
+
 			JobExecution execution = jobLauncher.run(job, jPBuilber.toJobParameters());
-			
-			
 			LOG.debug(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Exit Status : " + execution.getStatus());
 		} 
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-
 		LOG.debug(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Done.");
 	}
+	
 }
