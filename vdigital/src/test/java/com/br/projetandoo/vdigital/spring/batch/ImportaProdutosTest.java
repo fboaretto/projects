@@ -73,17 +73,26 @@ public class ImportaProdutosTest {
 		
 		List<Map<String, Object>> produtosMap = jdbcTemplate.queryForList("SELECT * FROM Produto");
 		Map<String, Object> produto1 = produtosMap.get(0);
+		Map<String, Object> produto5 = produtosMap.get(4);
 
+		//Verificando o  primeiro e o útimo produto
 		assertEquals(1001, produto1.get("produto_oid"));
 		assertEquals("Coca-Cola(1L)", produto1.get("nome"));
 		assertEquals(500, produto1.get("quantidadeDepo"));
-		
 		assertEquals(new BigDecimal("1.00"), produto1.get("valorCompra"));
 		assertEquals(new BigDecimal("3.50"), produto1.get("valorVenda"));
-
 		assertEquals(200, produto1.get("pontoReposicao"));
 		assertEquals(10, produto1.get("quantMaxGondola"));
 		assertEquals(10, produto1.get("quantMinGondola"));
+		
+		assertEquals(1005, produto5.get("produto_oid"));
+		assertEquals("presunto #Sadia pacote -500g", produto5.get("nome"));
+		assertEquals(300, produto5.get("quantidadeDepo"));
+		assertEquals(new BigDecimal("1.19"), produto5.get("valorCompra"));
+		assertEquals(new BigDecimal("3.29"), produto5.get("valorVenda"));
+		assertEquals(80, produto5.get("pontoReposicao"));
+		assertEquals(10, produto5.get("quantMaxGondola"));
+		assertEquals(10, produto5.get("quantMinGondola"));
 	}
 
 
