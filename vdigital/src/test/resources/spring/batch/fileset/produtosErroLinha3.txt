@@ -1,6 +1,6 @@
-produto_oid,nome,quantidadeDepo,valorCompra,valorVenda,pontoReposicao,quantMaxGondola,quantMinGondola
-1001,Coca-Cola(1L),500,1.00,3.50,200,10,10
-1002,Pepsi-Cola(1L),400,1.00,3.20,120,10,10
-1003,Nescau(350g),400,0.80,!!!!!!!!!ERRO,150,10,10
-1004,Skol - lata(350ml),400,0.69,1.49,200,10,10
-1005,presunto #Sadia pacote de 500g,300,1.19,3.89,80,10,10
+IDProduto,nomeProduto,valorCompra,valorVenda,quantMaxDeposito,quantMaxLoja,quantAtualDeposito,quantAtualLoja,pontoRessuprimento,pontoReposicao
+1001,Coca-Cola(1L),1.00,3.50,500,200,500,200,350,100
+1002,Pepsi-Cola(1L),1.00,3.20,400,120,400,120,250,70
+1003,Nescau(350g),0.80,2.50,SSSSSSSS,150,400,150,300,80
+1004,Skol - lata(350ml),0.60,1.49,400,200,400,200,300,100
+1005,presunto #Sadia pacote -500g,1.19,3.29,300,80,300,80,160,40

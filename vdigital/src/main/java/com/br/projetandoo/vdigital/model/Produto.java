@@ -14,105 +14,109 @@ public class Produto {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="produto_oid", unique=true, nullable=false)
-	private Integer oid;
+	private Long oid;
 	
 	private String nome;
 	
-	private Integer quantidadeDepo;
-
 	private BigDecimal valorCompra;
-	
+
 	private BigDecimal valorVenda;
 	
+	private Integer quantMaxDepo;
+	
+	private Integer quantMaxLoja;
+	
+	private Integer quantAtualDepo;
+	
+	private Integer quantAtualLoja;
+	
+	private Integer pontoRessuprimento;
+	
 	private Integer pontoReposicao;
-	
-	private Integer quantMaxGondola;
-	
-	private Integer quantMinGondola;
 
 
-	public String toString() {
-		return "Produto [" + getOid() + "]: " + getNome();
-	}
-
-	
-	public Integer getOid() {
+	public Long getOid() {
 		return oid;
 	}
 
-
-	public void setOid(Integer oid) {
+	public void setOid(Long oid) {
 		this.oid = oid;
 	}
-
 
 	public String getNome() {
 		return nome;
 	}
 
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-
-	public Integer getQuantidadeDepo() {
-		return quantidadeDepo;
-	}
-
-
-	public void setQuantidadeDepo(Integer quantidadeDepo) {
-		this.quantidadeDepo = quantidadeDepo;
-	}
-
 
 	public BigDecimal getValorCompra() {
 		return valorCompra;
 	}
 
-
 	public void setValorCompra(BigDecimal valorCompra) {
 		this.valorCompra = valorCompra;
 	}
-
 
 	public BigDecimal getValorVenda() {
 		return valorVenda;
 	}
 
-
 	public void setValorVenda(BigDecimal valorVenda) {
 		this.valorVenda = valorVenda;
 	}
 
+	public Integer getQuantMaxDepo() {
+		return quantMaxDepo;
+	}
+
+	public void setQuantMaxDepo(Integer quantMaxDepo) {
+		this.quantMaxDepo = quantMaxDepo;
+	}
+
+	public Integer getQuantMaxLoja() {
+		return quantMaxLoja;
+	}
+
+	public void setQuantMaxLoja(Integer quantMaxLoja) {
+		this.quantMaxLoja = quantMaxLoja;
+	}
+
+	public Integer getQuantAtualDepo() {
+		return quantAtualDepo;
+	}
+
+	public void setQuantAtualDepo(Integer quantAtualDepo) {
+		this.quantAtualDepo = quantAtualDepo;
+	}
+
+	public Integer getQuantAtualLoja() {
+		return quantAtualLoja;
+	}
+
+	public void setQuantAtualLoja(Integer quantAtualLoja) {
+		this.quantAtualLoja = quantAtualLoja;
+	}
 
 	public Integer getPontoReposicao() {
 		return pontoReposicao;
 	}
 
-
 	public void setPontoReposicao(Integer pontoReposicao) {
 		this.pontoReposicao = pontoReposicao;
 	}
-
-
-	public Integer getQuantMaxGondola() {
-		return quantMaxGondola;
+	
+	public Integer getPontoRessuprimento() {
+		return pontoRessuprimento;
 	}
 
-
-	public void setQuantMaxGondola(Integer quantMaxGondola) {
-		this.quantMaxGondola = quantMaxGondola;
+	public void setPontoRessuprimento(Integer pontoRessuprimento) {
+		this.pontoRessuprimento = pontoRessuprimento;
 	}
 
-
-	public Integer getQuantMinGondola() {
-		return quantMinGondola;
-	}
-
-
-	public void setQuantMinGondola(Integer quantMinGondola) {
-		this.quantMinGondola = quantMinGondola;
+	public String toString() {
+		return "Produto [" + getOid() + "]: " + getNome();
 	}
 
 }

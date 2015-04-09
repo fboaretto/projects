@@ -19,14 +19,16 @@ public class ProdutoFieldSetMapper implements FieldSetMapper<Produto> {
 		Produto produto = new Produto();
 		
 		try {
-			produto.setOid(fieldSetParam.readInt("oid"));
+			produto.setOid(fieldSetParam.readLong("oid"));
 			produto.setNome(fieldSetParam.readString("nome"));
-			produto.setQuantidadeDepo(fieldSetParam.readInt("quantidadeDepo"));
 			produto.setValorCompra(fieldSetParam.readBigDecimal("valorCompra"));
 			produto.setValorVenda(fieldSetParam.readBigDecimal("valorVenda"));
+			produto.setQuantMaxDepo(fieldSetParam.readInt("quantMaxDepo"));
+			produto.setQuantMaxLoja(fieldSetParam.readInt("quantMaxLoja"));
+			produto.setQuantAtualDepo(fieldSetParam.readInt("quantAtualDepo"));
+			produto.setQuantAtualLoja(fieldSetParam.readInt("quantAtualLoja"));
+			produto.setPontoRessuprimento(fieldSetParam.readInt("pontoRessuprimento"));
 			produto.setPontoReposicao(fieldSetParam.readInt("pontoReposicao"));
-			produto.setQuantMaxGondola(fieldSetParam.readInt("quantMaxGondola"));
-			produto.setQuantMinGondola(fieldSetParam.readInt("quantMinGondola"));
 		
 		} catch (FlatFileParseException ffpe) {
 			LOG.debug("****************************************** ERRO> " + ffpe);

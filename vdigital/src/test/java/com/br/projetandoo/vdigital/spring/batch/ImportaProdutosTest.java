@@ -28,10 +28,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class ImportaProdutosTest {
 
 	@Autowired
-	private JobLauncher jobLauncher;
+	private Job job;
 
 	@Autowired
-	private Job job;
+	private JobLauncher jobLauncher;
 
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
@@ -45,9 +45,7 @@ public class ImportaProdutosTest {
 	@Value("file:src/test/resources/spring/batch/fileset/produtosErroLinha3.txt")
 	private Resource produtosErro3Resource;
 
-	//private static final Logger LOG = LoggerFactory.getLogger(ImportaProdutosTest.class);
-			
-	public static int contagemInicial;
+	public static int contagemInicial = 0;
 	
 	public static int contagemFinal;
 
@@ -55,7 +53,6 @@ public class ImportaProdutosTest {
 	@Before
 	public void setup() throws Exception {
 		jdbcTemplate.update("delete from Produto");
-		contagemInicial = recupaContagemTotalProdutos();
 	}
 
 
@@ -76,27 +73,29 @@ public class ImportaProdutosTest {
 		Map<String, Object> produto5 = produtosMap.get(4);
 
 		//Verificando o  primeiro e o útimo produto
-		assertEquals(1001, produto1.get("produto_oid"));
+		assertEquals(Long.valueOf(1001), produto1.get("produto_oid"));
 		assertEquals("Coca-Cola(1L)", produto1.get("nome"));
-		assertEquals(500, produto1.get("quantidadeDepo"));
 		assertEquals(new BigDecimal("1.00"), produto1.get("valorCompra"));
 		assertEquals(new BigDecimal("3.50"), produto1.get("valorVenda"));
-		assertEquals(200, produto1.get("pontoReposicao"));
-		assertEquals(10, produto1.get("quantMaxGondola"));
-		assertEquals(10, produto1.get("quantMinGondola"));
+		assertEquals(500, produto1.get("quantMaxDepo"));
+		assertEquals(200, produto1.get("quantMaxLoja"));
+		assertEquals(500, produto1.get("quantAtualDepo"));
+		assertEquals(200, produto1.get("quantAtualLoja"));
+		assertEquals(350, produto1.get("pontoRessuprimento"));
+		assertEquals(100, produto1.get("pontoReposicao"));
 		
-		assertEquals(1005, produto5.get("produto_oid"));
+		assertEquals(Long.valueOf(1005), produto5.get("produto_oid"));
 		assertEquals("presunto #Sadia pacote -500g", produto5.get("nome"));
-		assertEquals(300, produto5.get("quantidadeDepo"));
 		assertEquals(new BigDecimal("1.19"), produto5.get("valorCompra"));
 		assertEquals(new BigDecimal("3.29"), produto5.get("valorVenda"));
-		assertEquals(80, produto5.get("pontoReposicao"));
-		assertEquals(10, produto5.get("quantMaxGondola"));
-		assertEquals(10, produto5.get("quantMinGondola"));
+		assertEquals(300, produto5.get("quantMaxDepo"));
+		assertEquals(80, produto5.get("quantMaxLoja"));
+		assertEquals(300, produto5.get("quantAtualDepo"));
+		assertEquals(80, produto5.get("quantAtualLoja"));
+		assertEquals(160, produto5.get("pontoRessuprimento"));
+		assertEquals(40, produto5.get("pontoReposicao"));
 	}
 
-
-	
 
 	/*Arquivo fonte contendo 5 produtos.
 	 *Segundo da lista contem erro.
@@ -114,8 +113,8 @@ public class ImportaProdutosTest {
 
 		assertEquals(contagemInicial + produtosAdicionados, contagemFinal);
 	}
-	
-	
+
+
 	/*Arquivo fonte contendo 5 produtos.
 	 *Terceiro da lista contem erro.
 	 *Primeiro e segundo produtos salvos(commit-interval=2) 
@@ -135,8 +134,8 @@ public class ImportaProdutosTest {
 		Map<String, Object> produto1 = produtosMap.get(0);
 		Map<String, Object> produto2 = produtosMap.get(1);
 		
-		assertEquals(produto1.get("produto_oid"), 1001);
-		assertEquals(produto2.get("produto_oid"), 1002);
+		assertEquals(produto1.get("produto_oid"), Long.valueOf(1001));
+		assertEquals(produto2.get("produto_oid"), Long.valueOf(1002));
 	}
 	
 
