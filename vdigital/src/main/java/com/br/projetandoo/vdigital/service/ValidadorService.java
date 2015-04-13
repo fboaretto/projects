@@ -33,7 +33,7 @@ public class ValidadorService {
 			LOGGER.debug(mensagem);
 		}
 		else {
-			mensagem = "TUDO EM ORDEM!";
+			mensagem = ">>>>>>>>>>>>  TUDO EM ORDEM!";
 			LOGGER.debug(mensagem);
 		}
 	}

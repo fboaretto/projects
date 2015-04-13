@@ -14,7 +14,7 @@ import org.springframework.core.io.Resource;
 public class ImportaProdutos {
 	
 	private static Resource produtosResource = new FileSystemResource(
-			"src/main/resources/spring/batch/fileset/produtos.txt");
+			"src/main/resources/spring/batch/input/produtos.txt");
 
 	private static final Logger LOG = LoggerFactory.getLogger(ImportaProdutos.class);
 

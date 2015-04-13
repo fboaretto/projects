@@ -32,7 +32,6 @@ public class ProdutoFieldSetMapper implements FieldSetMapper<Produto> {
 		
 		} catch (FlatFileParseException ffpe) {
 			LOG.debug("****************************************** ERRO> " + ffpe);
-			//ffpe.printStackTrace();
 		}
 		
 		return produto;

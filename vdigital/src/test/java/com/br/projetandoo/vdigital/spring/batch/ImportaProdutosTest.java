@@ -36,13 +36,13 @@ public class ImportaProdutosTest {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
-	@Value("file:src/test/resources/spring/batch/fileset/produtos.txt")
+	@Value("file:src/test/resources/spring/batch/input/produtos.txt")
 	private Resource produtosResource;
 
-	@Value("file:src/test/resources/spring/batch/fileset/produtosErroLinha2.txt")
+	@Value("file:src/test/resources/spring/batch/input/produtosErroLinha2.txt")
 	private Resource produtosErro2Resource;
 	
-	@Value("file:src/test/resources/spring/batch/fileset/produtosErroLinha3.txt")
+	@Value("file:src/test/resources/spring/batch/input/produtosErroLinha3.txt")
 	private Resource produtosErro3Resource;
 
 	public static int contagemInicial = 0;
@@ -73,7 +73,7 @@ public class ImportaProdutosTest {
 		Map<String, Object> produto5 = produtosMap.get(4);
 
 		//Verificando o  primeiro e o útimo produto
-		assertEquals(Long.valueOf(1001), produto1.get("produto_oid"));
+		assertEquals(1001L, produto1.get("produto_oid"));
 		assertEquals("Coca-Cola(1L)", produto1.get("nome"));
 		assertEquals(new BigDecimal("1.00"), produto1.get("valorCompra"));
 		assertEquals(new BigDecimal("3.50"), produto1.get("valorVenda"));
@@ -84,7 +84,7 @@ public class ImportaProdutosTest {
 		assertEquals(350, produto1.get("pontoRessuprimento"));
 		assertEquals(100, produto1.get("pontoReposicao"));
 		
-		assertEquals(Long.valueOf(1005), produto5.get("produto_oid"));
+		assertEquals(1005L, produto5.get("produto_oid"));
 		assertEquals("presunto #Sadia pacote -500g", produto5.get("nome"));
 		assertEquals(new BigDecimal("1.19"), produto5.get("valorCompra"));
 		assertEquals(new BigDecimal("3.29"), produto5.get("valorVenda"));
@@ -134,8 +134,8 @@ public class ImportaProdutosTest {
 		Map<String, Object> produto1 = produtosMap.get(0);
 		Map<String, Object> produto2 = produtosMap.get(1);
 		
-		assertEquals(produto1.get("produto_oid"), Long.valueOf(1001));
-		assertEquals(produto2.get("produto_oid"), Long.valueOf(1002));
+		assertEquals(produto1.get("produto_oid"), 1001L);
+		assertEquals(produto2.get("produto_oid"), 1002L);
 	}
 	
 

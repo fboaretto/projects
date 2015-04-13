@@ -8,11 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.br.projetandoo.vdigital.config.Config;
+import com.br.projetandoo.vdigital.config.MainConfig;
 import com.br.projetandoo.vdigital.model.Produto;
 import com.br.projetandoo.vdigital.repository.ProdutoRepository;
 
-@ContextConfiguration(classes={Config.class/*, TestConfig.class*/})
+@ContextConfiguration(classes={MainConfig.class/*, TestConfig.class*/})
 //@ActiveProfiles("test")
 @RunWith(SpringJUnit4ClassRunner.class)
 public class ProdutoRepositoryTest {
