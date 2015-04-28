@@ -45,9 +45,9 @@ public class JpaConfig {
 	@Bean
     public JpaTransactionManager transactionManager() {
         
-		JpaTransactionManager txnMgr = new JpaTransactionManager();
-        txnMgr.setEntityManagerFactory(entityManagerFactory().getObject());
-        return txnMgr;
+		JpaTransactionManager txManager = new JpaTransactionManager();
+        txManager.setEntityManagerFactory(entityManagerFactory().getObject());
+        return txManager;
     }
 
 }

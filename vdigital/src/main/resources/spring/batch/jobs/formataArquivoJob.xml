@@ -1,0 +1,72 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/batch
+		                   http://www.springframework.org/schema/batch/spring-batch-2.2.xsd
+		                   http://www.springframework.org/schema/beans
+		                   http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<!-- xmlns 'inline' para evitar namespaces como 'batch:job', 'batch:step',... -->
+	<job id="importaProdutosJob" xmlns="http://www.springframework.org/schema/batch">
+		<step id="formataArquivo">
+			<tasklet>
+				<chunk reader="itemReader" writer="itemWriter"
+					commit-interval="10" />
+			</tasklet>
+		</step>
+	</job>
+
+	<bean id="arquivoAFormatar" class="org.springframework.core.io.FileSystemResource"
+		scope="step">
+		<constructor-arg value="#{jobParameters[inputFile]}" />
+	</bean>
+
+	<bean id="blankLineRecordSeparatorPolicy"
+		class="com.br.projetandoo.vdigital.spring.batch.BlankLineRecordSeparatorPolicy" />
+
+	<bean id="itemReader" class="org.springframework.batch.item.file.FlatFileItemReader"
+		scope="step">
+		<property name="resource" ref="arquivoAFormatar" />
+		<property name="comments">
+			<list>
+				<value>\00\00\00</value>
+				<value>Gestao</value>
+				<value>------</value>
+				<value> Filial:</value>
+				<value> Filial:</value>
+				<value> Fabricante</value>
+				<value> Descricao do</value>
+			</list>
+		</property>
+		<property name="recordSeparatorPolicy" ref="blankLineRecordSeparatorPolicy" />
+		<property name="lineMapper">
+			<bean class="org.springframework.batch.item.file.mapping.DefaultLineMapper">
+				<property name="lineTokenizer">
+					<bean
+						class="org.springframework.batch.item.file.transform.FixedLengthTokenizer">
+						<property name="names" value="nome, id, nomeFornecedor" />
+						<property name="columns" value="2-41,44-49,118-135" />
+					</bean>
+				</property>
+				<property name="fieldSetMapper">
+					<bean
+						class="com.br.projetandoo.vdigital.spring.batch.ProdutoFieldSetMapper" />
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<!-- <bean id="itemProcessor"
+		class="com.br.projetandoo.vdigital.spring.batch.ProdutoLookupItemProcessor"
+		scope="step">
+		<constructor-arg value="fornecedorRepository" />
+	</bean> -->
+
+	<bean id="itemWriter"
+		class="org.springframework.batch.item.data.RepositoryItemWriter">
+		<property name="repository" ref="produtoRepository" />
+		<property name="methodName" value="save" />
+	</bean>
+	
+	<bean id="produtoRepository" class="com.br.projetandoo.vdigital.repository.ProdutoRepository" />
+
+</beans>

@@ -20,11 +20,11 @@ public class ValidadorService {
 	static final Logger LOGGER = LoggerFactory.getLogger(ValidadorService.class);
 
 
-	public void validaPontoRessuprimento(Long oid) {
+	public void validaPontoRessuprimento(Long id) {
 
 		String mensagem = "";
 
-		Produto produto = produtoRepository.findOne(oid);
+		Produto produto = produtoRepository.findOne(id);
 
 		int estoqueAtual = produto.getQuantAtualDepo() + produto.getQuantAtualLoja();
 
@@ -39,11 +39,11 @@ public class ValidadorService {
 	}
 	
 	
-	public void validaPontoReposicao(Long oid) {
+	public void validaPontoReposicao(Long id) {
 
 		String mensagem = "";
 
-		Produto produto = produtoRepository.findOne(oid);
+		Produto produto = produtoRepository.findOne(id);
 
 		int estoqueAtual = produto.getQuantMaxLoja() - produto.getQuantAtualLoja();
 
@@ -57,7 +57,7 @@ public class ValidadorService {
 		}
 	}
 	
-	public void validaPontoCritico(Long oid, int valorMax, int valorAtual) {
+	public void validaPontoCritico(Long id, int valorMax, int valorAtual) {
 		
 	}
 	

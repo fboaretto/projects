@@ -13,7 +13,7 @@ public class TestaValidadores {
 	@Autowired
 	private static ValidadorService validador;
 	
-	final static Long produto_oid = 1001L;
+	final static Long idProduto = 1001L;
 
 	@SuppressWarnings("resource")
 	public static void main(final String[] args) {
@@ -24,8 +24,8 @@ public class TestaValidadores {
 		context.registerShutdownHook();
 
 		validador = context.getBean(ValidadorService.class);
-		validador.validaPontoRessuprimento(produto_oid);
-		validador.validaPontoReposicao(produto_oid);
+		validador.validaPontoRessuprimento(idProduto);
+		validador.validaPontoReposicao(idProduto);
 		
 	}
 

@@ -13,13 +13,21 @@ public class ProdutoItemWriter implements ItemWriter<Produto> {
 
 	private JdbcTemplate jdbcTemplate;
 
-	private static final String INSERT_PRODUTO = "INSERT INTO Produto(produto_oid,nome,valorCompra,valorVenda,quantMaxDepo,"
-			+ "quantMaxLoja,quantAtualDepo,quantAtualLoja,pontoRessuprimento,"
-			+ "pontoReposicao)" + "values(?,?,?,?,?,?,?,?,?,?)";
+	private static final String INSERT_PRODUTO = "INSERT INTO produto(id,nome,fornecedor_id)"
+			+ "VALUES(?,?,?)";
 
-	private static final String UPDATE_PRODUTO = "UPDATE Produto SET nome=?, valorCompra=?, valorVenda=?, quantMaxDepo=?, "
+	/*
+	 * "INSERT INTO produto(id,nome,valorCompra,valorVenda,quantMaxDepo," +
+	 * "quantMaxLoja,quantAtualDepo,quantAtualLoja,pontoRessuprimento," +
+	 * "pontoReposicao)" + "VALUES(?,?,?,?,?,?,?,?,?,?)";
+	 */
+
+	private static final String UPDATE_PRODUTO = "UPDATE produto SET nome=?, fornecedor_id=?"
+			+ "where id=?"; 
+			
+			/*"UPDATE produto SET nome=?, valorCompra=?, valorVenda=?, quantMaxDepo=?, "
 			+ "quantMaxLoja=?, quantAtualDepo=?, quantAtualLoja=?, pontoRessuprimento=?"
-			+ ", pontoReposicao=? where produto_oid=?";
+			+ ", pontoReposicao=? where id=?";*/
 
 	public ProdutoItemWriter(DataSource dataSource) {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
@@ -30,21 +38,23 @@ public class ProdutoItemWriter implements ItemWriter<Produto> {
 		for (Produto produto : produtos) {
 
 			int updated = jdbcTemplate.update(UPDATE_PRODUTO,
-					produto.getNome(), produto.getValorCompra(),
+					produto.getNome(), produto.getFornecedor(), produto.getId());
+					
+					/*produto.getNome(), produto.getValorCompra(),
 					produto.getValorVenda(), produto.getQuantMaxDepo(),
 					produto.getQuantMaxLoja(), produto.getQuantMaxDepo(),
 					produto.getQuantAtualLoja(),
 					produto.getPontoRessuprimento(),
-					produto.getPontoReposicao(), produto.getOid());
+					produto.getPontoReposicao(), produto.getId());*/
 
 			if (updated == 0) {
-				jdbcTemplate.update(INSERT_PRODUTO, produto.getOid(),
-						produto.getNome(), produto.getValorCompra(),
+				jdbcTemplate.update(INSERT_PRODUTO, produto.getId(), produto.getNome(), produto.getFornecedor());
+						/*produto.getNome(), produto.getValorCompra(),
 						produto.getValorVenda(), produto.getQuantMaxDepo(),
 						produto.getQuantMaxLoja(), produto.getQuantMaxDepo(),
 						produto.getQuantAtualLoja(),
 						produto.getPontoRessuprimento(),
-						produto.getPontoReposicao());
+						produto.getPontoReposicao());*/
 			}
 		}
 	}

@@ -13,7 +13,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java-version>1.7</java-version>
-		<flyway.database.url>jdbc:mysql://localhost:3306/varejoDev</flyway.database.url>
+		<flyway.database.url>jdbc:mysql://localhost:3306/varejoTest</flyway.database.url>
 		<flyway.password>user2015</flyway.password>
 	</properties>
 
@@ -53,12 +53,12 @@
 		</profile>
 		<!-- PROD -->
 		<profile>
-			<id>prod</id>
+			<!-- <id>prod</id>
 			<properties>
 				<build.profile.id>prod</build.profile.id>
 				<flyway.database.url>jdbc:mysql://allinshopp.com.br:3306/ellasa</flyway.database.url>
 				<flyway.password>2pk0#3ty?</flyway.password>
-			</properties>
+			</properties> -->
 		</profile>
 		<!-- TEST -->
 		<profile>
@@ -93,11 +93,9 @@
 				<groupId>org.flywaydb</groupId>
 				<artifactId>flyway-maven-plugin</artifactId>
 				<version>3.2</version>
-				<!-- <executions> <execution> <phase>compile</phase> <goals> <goal>migrate</goal> 
-					</goals> </execution> </executions> -->
 				<configuration>
 					<url>${flyway.database.url}</url>
-					<user>root</user>
+					<user>user</user>
 					<password>${flyway.password}</password>
 					<!-- <validateOnMigrate>false</validateOnMigrate> -->
 				</configuration>
@@ -171,6 +169,12 @@
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-infrastructure</artifactId>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>

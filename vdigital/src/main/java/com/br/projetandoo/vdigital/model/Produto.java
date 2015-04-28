@@ -1,5 +1,6 @@
 package com.br.projetandoo.vdigital.model;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 import javax.persistence.Column;
@@ -7,40 +8,52 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
-public class Produto {
+@Table(name = "produto")
+public class Produto /*extends AbstractEntity*/ implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="produto_oid", unique=true, nullable=false)
-	private Long oid;
-	
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
+
+	@ManyToOne
+	@JoinColumn(name = "fornecedor_id")
+	private Fornecedor fornecedor;
+
+	@Column(nullable = false)
 	private String nome;
-	
+
 	private BigDecimal valorCompra;
 
 	private BigDecimal valorVenda;
-	
+
 	private Integer quantMaxDepo;
-	
+
 	private Integer quantMaxLoja;
-	
+
 	private Integer quantAtualDepo;
-	
+
 	private Integer quantAtualLoja;
-	
+
 	private Integer pontoRessuprimento;
-	
+
 	private Integer pontoReposicao;
+	
+	private String nomeFornecedor;
 
 
-	public Long getOid() {
-		return oid;
+	public Long getId() {
+		return id;
 	}
 
-	public void setOid(Long oid) {
-		this.oid = oid;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getNome() {
@@ -106,7 +119,7 @@ public class Produto {
 	public void setPontoReposicao(Integer pontoReposicao) {
 		this.pontoReposicao = pontoReposicao;
 	}
-	
+
 	public Integer getPontoRessuprimento() {
 		return pontoRessuprimento;
 	}
@@ -115,8 +128,24 @@ public class Produto {
 		this.pontoRessuprimento = pontoRessuprimento;
 	}
 
+	public Fornecedor getFornecedor() {
+		return fornecedor;
+	}
+
+	public void setFornecedor(Fornecedor fornecedor) {
+		this.fornecedor = fornecedor;
+	}
+
+	public String getNomeFornecedor() {
+		return nomeFornecedor;
+	}
+
+	public void setNomeFornecedor(String nomeFornecedor) {
+		this.nomeFornecedor = nomeFornecedor;
+	}
+
 	public String toString() {
-		return "Produto [" + getOid() + "]: " + getNome();
+		return "Produto [" + getId() + "]: " + getNome();
 	}
 
 }

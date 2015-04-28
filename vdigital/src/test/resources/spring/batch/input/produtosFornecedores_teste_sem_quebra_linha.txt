@@ -1,0 +1,58 @@
+\00\00\00MARKAO COSMETICOS                                          Listagem do Estoque Atual                                Qua    0001/0001
+Gestao Comercial                                                    Qualquer                                        22/04/2015 16:49   
+----------------------------------------------------------------------------------------------------------------------------ESTOQL--   
+ Filial:  03  MARKAO 3 NILOPOLIS                                                                                                       
+ Fabricante                                                                                                                            
+ Descricao do Produto                    | Codigo | Estoque  | UM | Qtd. Ped.|Qtd.Transf|Est.L\A2gico| Cod. Barra    | Fabricante        
+------------------------------------------------------------------------------------------------------------------------------------   
+ A/Q REGEN TERAPY BALSAMO S/ENX.150G     | 338310 |     5,000| UN |     ,000 |     ,000 |     5,000|  789600918095 | BIODERM           
+ A/Q REGEN TERAPY CONDICIONADOR 180G     | 338285 |     2,000| UN |     ,000 |     ,000 |     2,000| 7898289780781 | BIODERM           
+ A/Q REGEN TERAPY CR.ESTIMULADOR 330G    | 905185 |    15,000| UN |     ,000 |     ,000 |    15,000| 7898289780804 | BIODERM           
+ A/Q REGEN TERAPY SHAMPOO 200ML          | 338309 |    13,000| UN |   12,000 |     ,000 |    25,000| 7898289780774 | BIODERM           
+ ABAIXADOR P/LINGUA                      | 973687 |     1,000| UN |   50,000 |     ,000 |    51,000|  789631820115 | NT FLEX IND. COM. 
+ ABS. ALWAYS 08UN BAS.SC C/A             | 362622 |   322,000| UN |     ,000 |     ,000 |   322,000| 7590002025314 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN BAS.SC S/A             | 362634 |    70,000| UN |     ,000 |     ,000 |    70,000| 7590002025321 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN BAS.SV C/A             | 953015 |          | UN |     ,000 |     ,000 |          | 7501001156176 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN BAS.SV S/A             | 953023 |    24,000| UN |     ,000 |     ,000 |    24,000| 7501001156190 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN NOTURNO C/A            | 338090 |    36,000| UN |   12,000 |     ,000 |    48,000| 7501001169374 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PINK NOT.C/A           | 127441 |          | UN |     ,000 |     ,000 |          | 7506195129876 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PINK SC S/A            | 141932 |          | UN |     ,000 |     ,000 |          | 7506195129869 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PINK SV C/A            | 127433 |    21,000| UN |   12,000 |     ,000 |    33,000| 7506195129838 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PLAT. C/A ULTRA NOT.   | 180750 |          | UN |     ,000 |     ,000 |          | 7506295383147 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PLAT.INT.REG.          | 180660 |          | UN |     ,000 |     ,000 |          | 7506295397304 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PLAT.INT.SUP.          | 180679 |          | UN |     ,000 |     ,000 |          | 7506295397311 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PLAT.SC C/A NOT.       | 180725 |          | UN |     ,000 |     ,000 |          | 7506295383116 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PLAT.SC C/A ULTRA      | 180741 |          | UN |     ,000 |     ,000 |          | 7506295383130 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN ULTRA NOT.C/A          | 357878 |    54,000| UN |   24,000 |     ,000 |    78,000| 7590002012383 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN ULTRA SC C/A           | 357866 |    10,000| UN |     ,000 |     ,000 |    10,000| 7501001103934 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 12UN ACT.SC NOT.C/A         | 180717 |          | UN |     ,000 |     ,000 |          | 7506295325987 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 12UN PINK NOT.C/A           | 185514 |          | UN |     ,000 |     ,000 |          | 7506295325994 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 15UN REG.S/PERFUME          | 027285 |     4,000| UN |     ,000 |     ,000 |     4,000| 7501007499758 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 16UN BAS.SC C/A             | 027170 |    42,000| UN |     ,000 |     ,000 |    42,000| 7501007412924 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 16UN P.TOTAL NOT.C/A        | 179107 |          | UN |     ,000 |     ,000 |          | 7506195126035 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 16UN PLAT.PROT.DIARIO       | 180687 |          | UN |     ,000 |     ,000 |          | 7506295386414 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 16UN PLAT.SC C/A NORMAL     | 180733 |          | UN |     ,000 |     ,000 |          | 7506295383109 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 20UN PALT.DIARIO MULTI      | 180695 |          | UN |     ,000 |     ,000 |          | 7506295386391 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 20UN PLAT.DIARIO NORMAL     | 180709 |          | UN |     ,000 |     ,000 |          | 7506295386407 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 32UN BAS.SC C/A             | 179123 |    84,000| UN |     ,000 |     ,000 |    84,000| 7506309837475 | DISTR.(PROCTER GAM
+ ABS. ALWAYS ACT.SC ABS+NOT+FRASQ.       | 141150 |          | UN |     ,000 |     ,000 |          | 7506295340829 | DISTR.(PROCTER GAM
+ ABS. ALWAYS L32P24 ACT.NOTURNO          | 179115 |          | UN |     ,000 |     ,000 |          | 7506195147443 | DISTR.(PROCTER GAM
+ ABS. ALWAYS L32P24 ACT.SC C/A           | 196281 |          | UN |     ,000 |     ,000 |          | 7506195147429 | DISTR.(PROCTER GAM
+ ABS. ALWAYS PINK SV ABS+NOT+FRASQ.      | 172587 |    25,000| UN |     ,000 |     ,000 |    25,000| 7506309843889 | DISTR.(PROCTER GAM
+ ABS. AME 08UN CLASSIC S/A               | 933154 |          | UN |     ,000 |     ,000 |          | 7898095755072 | DISTR.( DISTRIBUID
+ ABS. AME 08UN EX.CARE C/A               | 933170 |          | UN |     ,000 |     ,000 |          | 7898095755058 | DISTR.( DISTRIBUID
+ ABS. AME 08UN EX.CARE S/A               | 933162 |          | UN |     ,000 |     ,000 |          |               | DISTR.( DISTRIBUID
+ ABS. CAREFREE 15UN BRISA                | 325581 |          | UN |   12,000 |     ,000 |    12,000| 7891010814434 | DISTR.( DISTRIBUID
+ ABS. CAREFREE 15UN NEUTRALIZE           | 375619 |     1,000| UN |   24,000 |     ,000 |    25,000| 7891010015268 | DISTR.( DISTRIBUID
+ ABS. CAREFREE 15UN ORIGINAL             | 324610 |          | UN |    6,000 |     ,000 |     6,000| 7891010087722 | DISTR.( DISTRIBUID
+ ABS. CAREFREE ORIG. L15P12 C/PERF.      | 219095 |          | UN |     ,000 |     ,000 |          | 7891010582920 | DISTR.( DISTRIBUID
+ ABS. INT.DAYS 15UN C/A                  | 934630 |    16,000| UN |     ,000 |     ,000 |    16,000| 7896007540266 | DISTR.( DISTRIBUID
+ ABS. INT.DAYS 15UN S/A                  | 941254 |          | UN |   24,000 |     ,000 |    24,000| 7896007540259 | DISTR.( DISTRIBUID
+ ABS. INT.DAYS 15UN S/A CONT.ODOR.       | 197830 |          | UN |   24,000 |     ,000 |    24,000| 7896007546596 | DISTR.( DISTRIBUID
+ ABS. INT.DAYS 15UN TEENS                | 941491 |          | UN |     ,000 |     ,000 |          | 7896007541386 | DISTR.( DISTRIBUID
+ ABS. INT.DAYS L15P12 S/A                | 108277 |          | UN |     ,000 |     ,000 |          | 7896007544271 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN BAS.SV C/A            | 966907 |          | UN |     ,000 |     ,000 |          | 7896007541409 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN BAS.SV S/A            | 985618 |          | UN |     ,000 |     ,000 |          | 7896007541430 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN DEC. C/A              | 075514 |          | UN |     ,000 |     ,000 |          | 7896007543762 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN DISCRET SV C/A        | 900310 |          | UN |     ,000 |     ,000 |          | 7702425527157 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN NOT.C/A               | 898871 |    94,000| UN |     ,000 |     ,000 |    94,000| 7896007540662 | DISTR.( DISTRIBUID
