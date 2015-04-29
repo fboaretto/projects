@@ -63,10 +63,16 @@
 
 	<bean id="itemWriter"
 		class="org.springframework.batch.item.data.RepositoryItemWriter">
-		<property name="repository" ref="produtoRepository" />
+		<property name="repositoryIMPL" ref="produtoRepositoryImpl" />
 		<property name="methodName" value="save" />
 	</bean>
 	
-	<bean id="produtoRepository" class="com.br.projetandoo.vdigital.repository.ProdutoRepository" />
-
+	<bean id="produtoRepositoryImpl" class="com.br.projetandoo.vdigital.repository.ProdutoRepositoryImpl">
+		<property name="produtoRepository">
+			<bean id="produtoRepository" class="com.br.projetandoo.vdigital.repository.ProdutoRepository" />
+		</property>
+		<property name="fornecedorRepository">
+			<bean id="fornecedorRepository" class="com.br.projetandoo.vdigital.repository.FornecedorRepository" />
+		</property>	
+	</bean>
 </beans>
