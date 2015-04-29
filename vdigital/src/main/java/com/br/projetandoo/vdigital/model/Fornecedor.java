@@ -13,12 +13,12 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "fornecedor")
-public class Fornecedor /*extends AbstractEntity*/ implements Serializable {
+public class Fornecedor /* extends AbstractEntity */implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	private String nome;
@@ -26,9 +26,18 @@ public class Fornecedor /*extends AbstractEntity*/ implements Serializable {
 	@OneToMany(mappedBy = "fornecedor", cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<Produto> produtos;
 
-	/*@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-	private Set<Endereco> enderecos;*/
+	public Fornecedor() {
+		
+	}
 
+	public Fornecedor(Long id) {
+		this.id = id;
+	}
+
+	public Fornecedor(Long id, String nomeFornecedor) {
+		this.id = id;
+		this.nome = nomeFornecedor;
+	}
 
 	public Long getId() {
 		return id;
@@ -53,13 +62,5 @@ public class Fornecedor /*extends AbstractEntity*/ implements Serializable {
 	public void setProdutos(List<Produto> produtos) {
 		this.produtos = produtos;
 	}
-
-	/*public Set<Endereco> getEnderecos() {
-		return enderecos;
-	}
-
-	public void setEnderecos(Set<Endereco> enderecos) {
-		this.enderecos = enderecos;
-	}*/
 
 }

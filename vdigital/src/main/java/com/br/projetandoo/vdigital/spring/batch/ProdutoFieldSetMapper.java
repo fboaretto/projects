@@ -11,8 +11,7 @@ import com.br.projetandoo.vdigital.model.Produto;
 
 public class ProdutoFieldSetMapper implements FieldSetMapper<Produto> {
 
-	private static final Logger LOG = LoggerFactory
-			.getLogger(ProdutoFieldSetMapper.class);
+	private static final Logger LOG = LoggerFactory.getLogger(ProdutoFieldSetMapper.class);
 
 	public Produto mapFieldSet(FieldSet fieldSetParam) throws BindException {
 
@@ -20,7 +19,7 @@ public class ProdutoFieldSetMapper implements FieldSetMapper<Produto> {
 
 		try {
 			produto.setNome(fieldSetParam.readString("nome"));
-			produto.setId(fieldSetParam.readLong("id"));
+			//produto.setId(fieldSetParam.readLong("id"));
 			produto.setNomeFornecedor(fieldSetParam.readString("nomeFornecedor"));
 			/*
 			 * produto.setValorCompra(fieldSetParam.readBigDecimal("valorCompra")
@@ -46,8 +45,7 @@ public class ProdutoFieldSetMapper implements FieldSetMapper<Produto> {
 		}
 
 		LOG.debug("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   SETMAPPER: "
-				+ produto.getNome() + " " + produto.getId() + " "
-				+ produto.getNomeFornecedor());
+				+ produto.getNome() + "   " + produto.getNomeFornecedor());
 		
 		return produto;
 	}

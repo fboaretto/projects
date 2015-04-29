@@ -9,7 +9,7 @@
 	<job id="importaProdutosJob" xmlns="http://www.springframework.org/schema/batch">
 		<step id="formataArquivo">
 			<tasklet>
-				<chunk reader="itemReader" writer="itemWriter"
+				<chunk reader="itemReader" processor="itemProcessor" writer="itemWriter"
 					commit-interval="10" />
 			</tasklet>
 		</step>
@@ -32,7 +32,6 @@
 				<value>Gestao</value>
 				<value>------</value>
 				<value> Filial:</value>
-				<value> Filial:</value>
 				<value> Fabricante</value>
 				<value> Descricao do</value>
 			</list>
@@ -43,36 +42,30 @@
 				<property name="lineTokenizer">
 					<bean
 						class="org.springframework.batch.item.file.transform.FixedLengthTokenizer">
-						<property name="names" value="nome, id, nomeFornecedor" />
-						<property name="columns" value="2-41,44-49,118-135" />
+						<property name="names" value="nome, nomeFornecedor" />
+						<property name="columns" value="2-41,118-135" />
 					</bean>
 				</property>
 				<property name="fieldSetMapper">
-					<bean
-						class="com.br.projetandoo.vdigital.spring.batch.ProdutoFieldSetMapper" />
+					<bean class="com.br.projetandoo.vdigital.spring.batch.ProdutoFieldSetMapper" />
 				</property>
 			</bean>
 		</property>
 	</bean>
 
-	<!-- <bean id="itemProcessor"
-		class="com.br.projetandoo.vdigital.spring.batch.ProdutoLookupItemProcessor"
+	<bean id="itemProcessor"
+		class="com.br.projetandoo.vdigital.spring.batch.AtualizaFornecedoresProcessor"
 		scope="step">
-		<constructor-arg value="fornecedorRepository" />
-	</bean> -->
+	</bean>
+	
+	<bean id="fornecedorRepository" class="com.br.projetandoo.vdigital.repository.FornecedorRepository" />
 
 	<bean id="itemWriter"
 		class="org.springframework.batch.item.data.RepositoryItemWriter">
-		<property name="repositoryIMPL" ref="produtoRepositoryImpl" />
+		<property name="repository" ref="produtoRepository" />
 		<property name="methodName" value="save" />
 	</bean>
 	
-	<bean id="produtoRepositoryImpl" class="com.br.projetandoo.vdigital.repository.ProdutoRepositoryImpl">
-		<property name="produtoRepository">
-			<bean id="produtoRepository" class="com.br.projetandoo.vdigital.repository.ProdutoRepository" />
-		</property>
-		<property name="fornecedorRepository">
-			<bean id="fornecedorRepository" class="com.br.projetandoo.vdigital.repository.FornecedorRepository" />
-		</property>	
-	</bean>
+	<bean id="produtoRepository" class="com.br.projetandoo.vdigital.repository.ProdutoRepository" />
+	
 </beans>

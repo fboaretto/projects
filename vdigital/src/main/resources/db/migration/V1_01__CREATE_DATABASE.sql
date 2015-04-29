@@ -1,12 +1,12 @@
 CREATE TABLE fornecedor (
   id BIGINT NOT NULL AUTO_INCREMENT,
-  nome VARCHAR(45) NOT NULL,
+  nome VARCHAR(60) NOT NULL,
   PRIMARY KEY (id)
 );
 
 CREATE TABLE produto (
   id BIGINT NOT NULL AUTO_INCREMENT,
-  nome VARCHAR(45) NOT NULL,
+  nome VARCHAR(60) NOT NULL,
   valorCompra DECIMAL(10,2),
   valorVenda DECIMAL(10,2),
   quantMaxDepo INT,
@@ -16,6 +16,7 @@ CREATE TABLE produto (
   pontoRessuprimento INT,
   pontoReposicao INT,
   fornecedor_id BIGINT NOT NULL,
+  nomeFornecedor VARCHAR(60),
   PRIMARY KEY (id),
   CONSTRAINT FK_FORNECEDOR_PRODUTO FOREIGN KEY (fornecedor_id) REFERENCES fornecedor (id)
 );

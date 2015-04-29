@@ -47,6 +47,18 @@ public class Produto /*extends AbstractEntity*/ implements Serializable {
 	
 	private String nomeFornecedor;
 
+	
+	public Produto() {
+    }
+
+    public Produto(Long id) {
+        this.id = id;
+    }
+
+    public Produto(Long id, String nomeProduto) {
+        this.id = id;
+        this.nome = nomeProduto;
+    }
 
 	public Long getId() {
 		return id;

@@ -23,23 +23,22 @@ import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.DependencyInjectionTestExecutionListener;
 
-
-@ContextConfiguration(locations = { "/spring/batch/jobs/formataArquivoJob.xml",
-		"/spring/batch/job-database-test.xml",
-		"/spring/batch/job-context-test.xml" })
-@TestExecutionListeners({ DependencyInjectionTestExecutionListener.class })
 @RunWith(SpringJUnit4ClassRunner.class)
+@TestExecutionListeners({ DependencyInjectionTestExecutionListener.class })
+@ContextConfiguration(locations = { "/spring/batch/jobs/importaProdutosFornecedoresJob.xml",
+"/spring/batch/launch-context.xml" })
 public class ProdutoFileReaderIntegrationTest {
 
 	@Autowired
 	private ItemReader<String> produtoFileReader;
-	
+
 	@Value("file:src/test/resources/spring/batch/input/produtosFornecedores_teste_sem_quebra_linha.txt")
 	private Resource produtosFornecedoresResource;
 
 	public StepExecution getStepExecution() throws IOException {
-		JobParameters jobParams = new JobParametersBuilder()
-				.addString("inputFile", produtosFornecedoresResource.getFile().getAbsolutePath())
+		JobParameters jobParams = new JobParametersBuilder().addString(
+				"inputFile",
+				produtosFornecedoresResource.getFile().getAbsolutePath())
 				.toJobParameters();
 
 		return MetaDataInstanceFactory.createStepExecution(jobParams);
@@ -50,21 +49,19 @@ public class ProdutoFileReaderIntegrationTest {
 
 		StepExecution execution = getStepExecution();
 
-		Integer readCount = StepScopeTestUtils.doInStepScope(execution,
-				new Callable<Integer>() {
+		Integer readCount = StepScopeTestUtils.doInStepScope(execution, new Callable<Integer>() {
 
-					@Override
-					public Integer call() throws Exception {
-						((ItemStream) produtoFileReader)
-								.open(new ExecutionContext());
+			@Override
+			public Integer call() throws Exception {
+				((ItemStream) produtoFileReader).open(new ExecutionContext());
 
-						int i = 0;
-						while (produtoFileReader.read() != null) {
-							i++;
-						}
-						return i;
-					}
-				});
+				int i = 0;
+				while (produtoFileReader.read() != null) {
+					i++;
+				}
+				return i;
+			}
+		});
 
 		assertEquals(readCount.intValue(), 51);
 	}

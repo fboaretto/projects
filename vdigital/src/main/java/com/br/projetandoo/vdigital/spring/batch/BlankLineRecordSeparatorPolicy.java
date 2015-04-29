@@ -10,8 +10,8 @@ public class BlankLineRecordSeparatorPolicy extends SimpleRecordSeparatorPolicy 
 	
 	@Override
     public boolean isEndOfRecord(final String line) {
-        if (line.trim().length() == 0) {
-        	LOG.debug("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&   ENTROU NO IF IS_END_OF_RECORD");
+        
+		if (line.trim().length() == 0) {
             return false;
         }
         return super.isEndOfRecord(line);
@@ -19,13 +19,10 @@ public class BlankLineRecordSeparatorPolicy extends SimpleRecordSeparatorPolicy 
  
     @Override
     public String postProcess(final String record) {
-        if (record == null || record.trim().length() == 0) {
-        	
-        LOG.debug("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&   ENTROU NO IF POSTPROCESS");
-        	
+        
+    	if (record == null || record.trim().length() == 0 || "null".equals(record)) {
             return null;
         }
-        
         return super.postProcess(record);
     }
     

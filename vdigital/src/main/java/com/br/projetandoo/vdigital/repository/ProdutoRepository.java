@@ -8,8 +8,12 @@ import org.springframework.stereotype.Repository;
 import com.br.projetandoo.vdigital.model.Produto;
 
 @Repository
-public interface ProdutoRepository extends CrudRepository<Produto, Long>, ProdutoRepositoryCustom {
+public interface ProdutoRepository extends CrudRepository<Produto, Long> {
 	
-	List<Produto> findByFornecedor(Long fornecedor_id);
+	public List<Produto> findByFornecedor(Long fornecedor_id);
 	
+	public Produto findByNome(String nomeProduto);
+	
+	@Override
+	public <S extends Produto> S save(S entity);
 }

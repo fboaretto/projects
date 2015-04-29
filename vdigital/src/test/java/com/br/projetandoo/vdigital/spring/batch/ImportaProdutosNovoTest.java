@@ -19,9 +19,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {
-		"/spring/batch/jobs/formataArquivoJob.xml",
+		"/spring/batch/jobs/importaProdutosFornecedoresJob.xml",
 		"/spring/batch/launch-context.xml" })
 public class ImportaProdutosNovoTest {
+
+	private static final String TABELA_PRODUTO = "produto";
+	private static final String TABELA_FORNECEDOR = "fornecedor";
 
 	@Autowired
 	private Job job;
@@ -43,6 +46,9 @@ public class ImportaProdutosNovoTest {
 	@Before
 	public void setup() throws Exception {
 		jdbcTemplate.update("DELETE FROM produto");
+		jdbcTemplate.update("DELETE FROM fornecedor");
+		assertEquals(contagemInicial, recupaContagemTotalTabela(TABELA_PRODUTO).intValue());
+		assertEquals(contagemInicial, recupaContagemTotalTabela(TABELA_FORNECEDOR).intValue());
 	}
 
 
@@ -54,7 +60,7 @@ public class ImportaProdutosNovoTest {
 		jobLauncher.run(job, jPBuilber.toJobParameters());
 		
 		int produtosAdicionados = 51;
-		contagemFinal = recupaContagemTotalProdutos();
+		contagemFinal = recupaContagemTotalTabela(TABELA_PRODUTO);
 
 		assertEquals(contagemInicial + produtosAdicionados, contagemFinal);
 		
@@ -70,8 +76,8 @@ public class ImportaProdutosNovoTest {
 	}
 
 
-	public Integer recupaContagemTotalProdutos() {
-		return jdbcTemplate.queryForObject("SELECT COUNT(*) FROM produto", Integer.class);
+	public Integer recupaContagemTotalTabela(String tabela) {
+		return jdbcTemplate.queryForObject("SELECT COUNT(*) FROM " + tabela, Integer.class);
 	}
 	
 	public JobParametersBuilder carregaArquivoTeste(Resource resource) throws IOException {
