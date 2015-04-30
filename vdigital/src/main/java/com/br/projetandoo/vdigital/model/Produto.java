@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name = "produto")
@@ -29,6 +30,13 @@ public class Produto /*extends AbstractEntity*/ implements Serializable {
 	@Column(nullable = false)
 	private String nome;
 
+	@Column(nullable = false, unique = true)
+	private String codigo;
+
+	private Integer estoque;
+
+	private String codigoBarra;
+
 	private BigDecimal valorCompra;
 
 	private BigDecimal valorVenda;
@@ -44,21 +52,26 @@ public class Produto /*extends AbstractEntity*/ implements Serializable {
 	private Integer pontoRessuprimento;
 
 	private Integer pontoReposicao;
-	
+
+	@Transient
 	private String nomeFornecedor;
 
-	
+	@Transient
+	private Integer volume;
+
+
+
 	public Produto() {
-    }
+	}
 
-    public Produto(Long id) {
-        this.id = id;
-    }
+	public Produto(Long id) {
+		this.id = id;
+	}
 
-    public Produto(Long id, String nomeProduto) {
-        this.id = id;
-        this.nome = nomeProduto;
-    }
+	public Produto(Long id, String nomeProduto) {
+		this.id = id;
+		this.nome = nomeProduto;
+	}
 
 	public Long getId() {
 		return id;
@@ -154,6 +167,38 @@ public class Produto /*extends AbstractEntity*/ implements Serializable {
 
 	public void setNomeFornecedor(String nomeFornecedor) {
 		this.nomeFornecedor = nomeFornecedor;
+	}
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+	public Integer getVolume() {
+		return volume;
+	}
+
+	public void setVolume(Integer volume) {
+		this.volume = volume;
+	}
+
+	public Integer getEstoque() {
+		return estoque;
+	}
+
+	public void setEstoque(Integer estoque) {
+		this.estoque = estoque;
+	}
+
+	public String getCodigoBarra() {
+		return codigoBarra;
+	}
+
+	public void setCodigoBarra(String codigoBarra) {
+		this.codigoBarra = codigoBarra;
 	}
 
 	public String toString() {

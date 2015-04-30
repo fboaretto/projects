@@ -9,11 +9,9 @@ import com.br.projetandoo.vdigital.model.Produto;
 
 @Repository
 public interface ProdutoRepository extends CrudRepository<Produto, Long> {
-	
+
 	public List<Produto> findByFornecedor(Long fornecedor_id);
-	
+
 	public Produto findByNome(String nomeProduto);
-	
-	@Override
-	public <S extends Produto> S save(S entity);
+
 }

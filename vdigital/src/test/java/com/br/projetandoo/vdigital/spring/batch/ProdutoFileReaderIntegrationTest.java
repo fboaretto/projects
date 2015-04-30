@@ -32,22 +32,17 @@ public class ProdutoFileReaderIntegrationTest {
 	@Autowired
 	private ItemReader<String> produtoFileReader;
 
-	@Value("file:src/test/resources/spring/batch/input/produtosFornecedores_teste_sem_quebra_linha.txt")
-	private Resource produtosFornecedoresResource;
+	@Value("file:src/test/resources/spring/batch/input/produtosFornecedores_umBloco.txt")
+	private Resource arquivoUnicoBloco;
+	
+	@Value("file:src/test/resources/spring/batch/input/produtosFornecedores_cincoBlocos.txt")
+	private Resource arquivoCincoBlocos;
 
-	public StepExecution getStepExecution() throws IOException {
-		JobParameters jobParams = new JobParametersBuilder().addString(
-				"inputFile",
-				produtosFornecedoresResource.getFile().getAbsolutePath())
-				.toJobParameters();
-
-		return MetaDataInstanceFactory.createStepExecution(jobParams);
-	}
 
 	@Test
-	public void testProdutoFileReader() throws Exception {
+	public void testProdutoFileReader_leituraArquivoBlocoUnico() throws Exception {
 
-		StepExecution execution = getStepExecution();
+		StepExecution execution = getStepExecution(arquivoUnicoBloco);
 
 		Integer readCount = StepScopeTestUtils.doInStepScope(execution, new Callable<Integer>() {
 
@@ -65,5 +60,36 @@ public class ProdutoFileReaderIntegrationTest {
 
 		assertEquals(readCount.intValue(), 51);
 	}
+	
+	@Test
+	public void testProdutoFileReader_leituraArquivoCincoBlocos() throws Exception {
 
+		StepExecution execution = getStepExecution(arquivoCincoBlocos);
+
+		Integer readCount = StepScopeTestUtils.doInStepScope(execution, new Callable<Integer>() {
+
+			@Override
+			public Integer call() throws Exception {
+				((ItemStream) produtoFileReader).open(new ExecutionContext());
+
+				int i = 0;
+				while (produtoFileReader.read() != null) {
+					i++;
+				}
+				return i;
+			}
+		});
+
+		assertEquals(readCount.intValue(), 255);
+	}
+
+	
+	public StepExecution getStepExecution(Resource arquivoAcarregar) throws IOException {
+		JobParameters jobParams = new JobParametersBuilder().addString("inputFile",
+				arquivoAcarregar.getFile().getAbsolutePath())
+				.toJobParameters();
+		
+		return MetaDataInstanceFactory.createStepExecution(jobParams);
+	}
+	
 }

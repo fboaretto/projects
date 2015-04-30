@@ -20,8 +20,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {
 		"/spring/batch/jobs/importaProdutosFornecedoresJob.xml",
-		"/spring/batch/launch-context.xml" })
-public class ImportaProdutosNovoTest {
+"/spring/batch/launch-context.xml" })
+public class ImportaProdutosFornecedoresTest {
 
 	private static final String TABELA_PRODUTO = "produto";
 	private static final String TABELA_FORNECEDOR = "fornecedor";
@@ -35,14 +35,20 @@ public class ImportaProdutosNovoTest {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
-	@Value("file:src/test/resources/spring/batch/input/produtosFornecedores_teste_sem_quebra_linha.txt")
-	private Resource produtosFornecedoresResource;
+	@Value("file:src/test/resources/spring/batch/input/produtosFornecedores_umBloco.txt")
+	private Resource arquivoUnicoBloco;
+
+	@Value("file:src/test/resources/spring/batch/input/produtosFornecedores_cincoBlocos.txt")
+	private Resource arquivoCincoBlocos;
+
+	@Value("file:src/test/resources/spring/batch/input/produtosFornecedores_umBloco_estoquesAtualizados.txt")
+	private Resource arquivoUnicoBlocoEstoquesAtualizados;
 
 	public static int contagemInicial = 0;
-	
+
 	public static int contagemFinal;
 
-	
+
 	@Before
 	public void setup() throws Exception {
 		jdbcTemplate.update("DELETE FROM produto");
@@ -53,37 +59,52 @@ public class ImportaProdutosNovoTest {
 
 
 	@Test
-	public void testImportaProdutos_todosSalvosComSucesso() throws Exception {
+	public void testImportaProdutos_arquivoComApenasUmBloco_todosSalvosComSucesso() throws Exception {
 
-		JobParametersBuilder jPBuilber = carregaArquivoTeste(produtosFornecedoresResource);
-		
+		JobParametersBuilder jPBuilber = carregaArquivoTeste(arquivoUnicoBloco);
+
 		jobLauncher.run(job, jPBuilber.toJobParameters());
-		
+
 		int produtosAdicionados = 51;
 		contagemFinal = recupaContagemTotalTabela(TABELA_PRODUTO);
 
 		assertEquals(contagemInicial + produtosAdicionados, contagemFinal);
-		
-		//List<Map<String, Object>> produtosMap = jdbcTemplate.queryForList("SELECT * FROM produto");
-		//Map<String, Object> produto1 = produtosMap.get(0);
-		//Map<String, Object> produto5 = produtosMap.get(4);
+	}
 
-		//Verificando o  primeiro e o útimo produto
-		//assertEquals(1001L, produto1.get("id"));
-		//assertEquals("Coca-Cola(1L)", produto1.get("nome"));
-		//assertEquals(100, produto1.get("pontoReposicao"));
-		
+	//@Test
+	public void testImportaProdutos_arquivoMaisDeUmBloco_todosSalvosComSucesso() throws Exception {
+
+		JobParametersBuilder jPBuilber = carregaArquivoTeste(arquivoCincoBlocos);
+
+		jobLauncher.run(job, jPBuilber.toJobParameters());
+
+		int produtosAdicionados = 255;
+		contagemFinal = recupaContagemTotalTabela(TABELA_PRODUTO);
+
+		assertEquals(contagemInicial + produtosAdicionados, contagemFinal);
+	}
+	
+	//@Test
+	public void testImportaeAtualizaProdutos_sucesso() throws Exception {
+
+		JobParametersBuilder jPBuilber = carregaArquivoTeste(arquivoUnicoBlocoEstoquesAtualizados);
+
+		jobLauncher.run(job, jPBuilber.toJobParameters());
+
+		int produtosAdicionados = 51;
+		contagemFinal = recupaContagemTotalTabela(TABELA_PRODUTO);
+		assertEquals(contagemInicial + produtosAdicionados, contagemFinal);
 	}
 
 
 	public Integer recupaContagemTotalTabela(String tabela) {
 		return jdbcTemplate.queryForObject("SELECT COUNT(*) FROM " + tabela, Integer.class);
 	}
-	
+
 	public JobParametersBuilder carregaArquivoTeste(Resource resource) throws IOException {
 		JobParametersBuilder jPBuilber = new JobParametersBuilder();
 		jPBuilber.addString("inputFile", resource.getFile().getAbsolutePath());
 		return jPBuilber;
 	}
-	
+
 }

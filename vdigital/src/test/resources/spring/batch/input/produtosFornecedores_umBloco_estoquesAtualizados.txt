@@ -5,16 +5,17 @@ Gestao Comercial                                                    Qualquer    
  Fabricante                                                                                                                            
  Descricao do Produto                    | Codigo | Estoque  | UM | Qtd. Ped.|Qtd.Transf|Est.L\A2gico| Cod. Barra    | Fabricante        
 ------------------------------------------------------------------------------------------------------------------------------------   
- A/Q REGEN TERAPY BALSAMO S/ENX.150G     | 338310 |     5,000| UN |     ,000 |     ,000 |     5,000|  789600918095 | BIODERM           
- A/Q REGEN TERAPY CONDICIONADOR 180G     | 338285 |     2,000| UN |     ,000 |     ,000 |     2,000| 7898289780781 | BIODERM           
- A/Q REGEN TERAPY CR.ESTIMULADOR 330G    | 905185 |    15,000| UN |     ,000 |     ,000 |    15,000| 7898289780804 | BIODERM           
- A/Q REGEN TERAPY SHAMPOO 200ML          | 338309 |    13,000| UN |   12,000 |     ,000 |    25,000| 7898289780774 | BIODERM           
- ABAIXADOR P/LINGUA                      | 973687 |     1,000| UN |   50,000 |     ,000 |    51,000|  789631820115 | NT FLEX IND. COM. 
- ABS. ALWAYS 08UN BAS.SC C/A             | 362622 |   322,000| UN |     ,000 |     ,000 |   322,000| 7590002025314 | DISTR.(PROCTER GAM
- ABS. ALWAYS 08UN BAS.SC S/A             | 362634 |    70,000| UN |     ,000 |     ,000 |    70,000| 7590002025321 | DISTR.(PROCTER GAM
- ABS. ALWAYS 08UN BAS.SV C/A             | 953015 |          | UN |     ,000 |     ,000 |          | 7501001156176 | DISTR.(PROCTER GAM
- ABS. ALWAYS 08UN BAS.SV S/A             | 953023 |    24,000| UN |     ,000 |     ,000 |    24,000| 7501001156190 | DISTR.(PROCTER GAM
- ABS. ALWAYS 08UN NOTURNO C/A            | 338090 |    36,000| UN |   12,000 |     ,000 |    48,000| 7501001169374 | DISTR.(PROCTER GAM
+                                                                                                                                       
+ A/Q REGEN TERAPY BALSAMO S/ENX.150G     | 338310 |    50,000| UN |     ,000 |     ,000 |     5,000|  789600918095 | BIODERM           
+ A/Q REGEN TERAPY CONDICIONADOR 180G     | 338285 |    50,000| UN |     ,000 |     ,000 |     2,000| 7898289780781 | BIODERM           
+ A/Q REGEN TERAPY CR.ESTIMULADOR 330G    | 905185 |    50,000| UN |     ,000 |     ,000 |    15,000| 7898289780804 | BIODERM           
+ A/Q REGEN TERAPY SHAMPOO 200ML          | 338309 |    50,000| UN |   12,000 |     ,000 |    25,000| 7898289780774 | BIODERM           
+ ABAIXADOR P/LINGUA                      | 973687 |    50,000| UN |   50,000 |     ,000 |    51,000|  789631820115 | NT FLEX IND. COM. 
+ ABS. ALWAYS 08UN BAS.SC C/A             | 362622 |   200,000| UN |     ,000 |     ,000 |   322,000| 7590002025314 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN BAS.SC S/A             | 362634 |    50,000| UN |     ,000 |     ,000 |    70,000| 7590002025321 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN BAS.SV C/A             | 953015 |    50,000| UN |     ,000 |     ,000 |          | 7501001156176 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN BAS.SV S/A             | 953023 |    50,000| UN |     ,000 |     ,000 |    24,000| 7501001156190 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN NOTURNO C/A            | 338090 |    50,000| UN |   12,000 |     ,000 |    48,000| 7501001169374 | DISTR.(PROCTER GAM
  ABS. ALWAYS 08UN PINK NOT.C/A           | 127441 |          | UN |     ,000 |     ,000 |          | 7506195129876 | DISTR.(PROCTER GAM
  ABS. ALWAYS 08UN PINK SC S/A            | 141932 |          | UN |     ,000 |     ,000 |          | 7506195129869 | DISTR.(PROCTER GAM
  ABS. ALWAYS 08UN PINK SV C/A            | 127433 |    21,000| UN |   12,000 |     ,000 |    33,000| 7506195129838 | DISTR.(PROCTER GAM

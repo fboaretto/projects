@@ -20,7 +20,7 @@ public class ProdutoRepositoryTest {
 	//@Autowired
 	//private JdbcOperations jdbcOps;
 	
-	@Test
+	//@Test
 	public void testFindByNome() {
 		
 		/*Produto produto = produtoRepository.findByNome("Coca-Cola(1L)");

@@ -13,14 +13,28 @@ public class ProdutoFieldSetMapper implements FieldSetMapper<Produto> {
 
 	private static final Logger LOG = LoggerFactory.getLogger(ProdutoFieldSetMapper.class);
 
-	public Produto mapFieldSet(FieldSet fieldSetParam) throws BindException {
+	public Produto mapFieldSet(FieldSet fsParam) throws BindException {
 
 		Produto produto = new Produto();
 
 		try {
-			produto.setNome(fieldSetParam.readString("nome"));
-			//produto.setId(fieldSetParam.readLong("id"));
-			produto.setNomeFornecedor(fieldSetParam.readString("nomeFornecedor"));
+			produto.setNome(fsParam.readString("nome"));
+			produto.setCodigo(fsParam.readString("codigo"));
+
+			if(fsParam.readString("estoque").isEmpty()) {
+				produto.setEstoque(Integer.valueOf(0));
+			}
+			else
+				produto.setEstoque(Integer.parseInt(fsParam.readString("estoque").trim()));
+
+			if(fsParam.readString("codigoBarra").isEmpty()) {
+				produto.setCodigoBarra(null);
+			}
+			else
+				produto.setCodigoBarra(fsParam.readString("codigoBarra").trim());
+
+			produto.setNomeFornecedor(fsParam.readString("nomeFornecedor"));
+
 			/*
 			 * produto.setValorCompra(fieldSetParam.readBigDecimal("valorCompra")
 			 * );
@@ -28,25 +42,16 @@ public class ProdutoFieldSetMapper implements FieldSetMapper<Produto> {
 			 * ));
 			 * produto.setQuantMaxDepo(fieldSetParam.readInt("quantMaxDepo"));
 			 * produto.setQuantMaxLoja(fieldSetParam.readInt("quantMaxLoja"));
-			 * produto
-			 * .setQuantAtualDepo(fieldSetParam.readInt("quantAtualDepo"));
-			 * produto
-			 * .setQuantAtualLoja(fieldSetParam.readInt("quantAtualLoja"));
-			 * produto
-			 * .setPontoRessuprimento(fieldSetParam.readInt("pontoRessuprimento"
-			 * ));
-			 * produto.setPontoReposicao(fieldSetParam.readInt("pontoReposicao"
-			 * ));
 			 */
 
 		} catch (FlatFileParseException ffpe) {
-			LOG.debug("****************************************** ERRO> "
-					+ ffpe);
+			LOG.debug("*************************** ERRO> " + ffpe);
 		}
 
-		LOG.debug("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$   SETMAPPER: "
-				+ produto.getNome() + "   " + produto.getNomeFornecedor());
-		
+		LOG.debug("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ SETMAPPER: "
+				+ produto.getNome() + "   " + produto.getCodigo() + "   "
+				+ produto.getNomeFornecedor());
+
 		return produto;
 	}
 

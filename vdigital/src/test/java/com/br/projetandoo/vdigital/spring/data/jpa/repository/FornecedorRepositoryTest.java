@@ -36,10 +36,12 @@ public class FornecedorRepositoryTest {
 		
 		Produto p1 = new Produto();
 		p1.setNome("Coca Cola Litrao");
+		p1.setCodigo("000000");
 		p1.setFornecedor(fornecedor);
 		
 		Produto p2 = new Produto();
 		p2.setNome("Coca Cola Litrim");
+		p2.setCodigo("111111");
 		p2.setFornecedor(fornecedor);
 		
 		List<Produto> produtos = new ArrayList<Produto>();
