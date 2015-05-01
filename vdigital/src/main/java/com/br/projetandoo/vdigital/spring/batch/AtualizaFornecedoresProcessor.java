@@ -1,7 +1,5 @@
 package com.br.projetandoo.vdigital.spring.batch;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -10,8 +8,6 @@ import com.br.projetandoo.vdigital.model.Produto;
 import com.br.projetandoo.vdigital.repository.FornecedorRepository;
 
 public class AtualizaFornecedoresProcessor implements ItemProcessor<Produto, Produto> {
-	
-	private static final Logger LOG = LoggerFactory.getLogger(AtualizaFornecedoresProcessor.class);
 	
 	@Autowired
 	private FornecedorRepository fornecedorRepository;

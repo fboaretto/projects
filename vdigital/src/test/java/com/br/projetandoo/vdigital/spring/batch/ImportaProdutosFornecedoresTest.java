@@ -71,7 +71,7 @@ public class ImportaProdutosFornecedoresTest {
 		assertEquals(contagemInicial + produtosAdicionados, contagemFinal);
 	}
 
-	//@Test
+	@Test
 	public void testImportaProdutos_arquivoMaisDeUmBloco_todosSalvosComSucesso() throws Exception {
 
 		JobParametersBuilder jPBuilber = carregaArquivoTeste(arquivoCincoBlocos);
@@ -84,7 +84,9 @@ public class ImportaProdutosFornecedoresTest {
 		assertEquals(contagemInicial + produtosAdicionados, contagemFinal);
 	}
 	
-	//@Test
+	/*Acertar o teste para rodar duas vezes o job e assim atualizar as tabelas sem precisar
+	 * comentar o @Before*/
+	@Test
 	public void testImportaeAtualizaProdutos_sucesso() throws Exception {
 
 		JobParametersBuilder jPBuilber = carregaArquivoTeste(arquivoUnicoBlocoEstoquesAtualizados);
