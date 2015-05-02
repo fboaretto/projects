@@ -37,7 +37,7 @@ public class Produto /*extends AbstractEntity*/ implements Serializable {
 
 	private String codigoBarra;
 
-	private BigDecimal valorCompra;
+	private BigDecimal valorCusto;
 
 	private BigDecimal valorVenda;
 
@@ -89,12 +89,12 @@ public class Produto /*extends AbstractEntity*/ implements Serializable {
 		this.nome = nome;
 	}
 
-	public BigDecimal getValorCompra() {
-		return valorCompra;
+	public BigDecimal getValorCusto() {
+		return valorCusto;
 	}
 
-	public void setValorCompra(BigDecimal valorCompra) {
-		this.valorCompra = valorCompra;
+	public void setValorCusto(BigDecimal valorCusto) {
+		this.valorCusto = valorCusto;
 	}
 
 	public BigDecimal getValorVenda() {

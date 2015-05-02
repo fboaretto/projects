@@ -10,7 +10,7 @@ CREATE TABLE produto (
   codigo VARCHAR(6) NOT NULL,
   estoque INT,
   codigoBarra VARCHAR(13),
-  valorCompra DECIMAL(10,2),
+  valorCusto DECIMAL(10,2),
   valorVenda DECIMAL(10,2),
   quantMaxDepo INT,
   quantMaxLoja INT,

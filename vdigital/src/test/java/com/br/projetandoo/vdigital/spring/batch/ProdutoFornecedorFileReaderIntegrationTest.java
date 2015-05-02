@@ -25,9 +25,10 @@ import org.springframework.test.context.support.DependencyInjectionTestExecution
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @TestExecutionListeners({ DependencyInjectionTestExecutionListener.class })
-@ContextConfiguration(locations = { "/spring/batch/jobs/importaProdutosFornecedoresJob.xml",
-"/spring/batch/launch-context.xml" })
-public class ProdutoFileReaderIntegrationTest {
+@ContextConfiguration(locations = { 
+		"/spring/batch/jobs/importaProdutosFornecedoresJob.xml",
+		"/spring/batch/launch-context.xml" })
+public class ProdutoFornecedorFileReaderIntegrationTest {
 
 	@Autowired
 	private ItemReader<String> produtoFileReader;

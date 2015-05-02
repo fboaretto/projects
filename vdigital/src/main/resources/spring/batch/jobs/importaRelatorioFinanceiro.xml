@@ -9,58 +9,62 @@
 	<job id="importaRelatorioFinanceiroJob" xmlns="http://www.springframework.org/schema/batch">
 		<step id="importaRelatorioFinanceiroStep">
 			<tasklet>
-				<chunk reader="itemReader" processor="itemProcessor" writer="itemWriter"
-					commit-interval="10" />
+				<chunk reader="produtoItemReader"
+					processor="produtoItemProcessor" 
+					writer="produtoItemWriter"
+					commit-interval="10" /> 
+					<!-- skip-limit="10"
+					 <skippable-exception-classes>
+						<include class="org.springframework.dao.DataIntegrityViolationException" />
+						<include class="com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException" />
+					</skippable-exception-classes>
+				</chunk> -->
+				<listeners>
+					<listener ref="produtoItemLogger" />
+				</listeners>	
 			</tasklet>
 		</step>
 	</job>
+	
+	<bean id="produtoItemLogger"
+		class="com.br.projetandoo.vdigital.spring.batch.ProdutoItemListener" />
 
-	<bean id="arquivoEntrada" class="org.springframework.core.io.FileSystemResource"
-		scope="step">
+	<bean id="arquivoEntrada" class="org.springframework.core.io.FileSystemResource" scope="step">
 		<constructor-arg value="#{jobParameters[inputFile]}" />
 	</bean>
 
-	<bean id="blankLineRecordSeparatorPolicy"
-		class="com.br.projetandoo.vdigital.spring.batch.BlankLineRecordSeparatorPolicy" />
-
-	<bean id="itemReader" class="org.springframework.batch.item.file.FlatFileItemReader"
+	<bean id="produtoItemReader" class="org.springframework.batch.item.file.FlatFileItemReader"
 		scope="step">
 		<property name="resource" ref="arquivoEntrada" />
-		<property name="comments">
+		<property name="linesToSkip" value="10" />
+		<!-- <property name="comments">
 			<list>
-				<value>\00\00</value>
-				<value>Gestao</value>
-				<value>------</value>
-				<value> Filial:</value>
-				<value> Fabricante</value>
-				<value> Descricao do</value>
+				<value>/.MARKAO/g</value>
 			</list>
-		</property>
-		<property name="recordSeparatorPolicy" ref="blankLineRecordSeparatorPolicy" />
+		</property> 
+		<property name="recordSeparatorPolicy" ref="blankLineRecordSeparatorPolicy" /> -->
 		<property name="lineMapper">
 			<bean class="org.springframework.batch.item.file.mapping.DefaultLineMapper">
 				<property name="lineTokenizer">
 					<bean
 						class="org.springframework.batch.item.file.transform.FixedLengthTokenizer">
-						<property name="names" value="nome, codigo, nomeFornecedor" />
-						<property name="columns" value="2-41,44-49,118-135" />
+						<property name="names" value="nome, codigo, volume, valorVenda, valorCusto" />
+						<property name="columns" value="1-42,45-50,65-70,89-98,115-124" />
 					</bean>
 				</property>
 				<property name="fieldSetMapper">
-					<bean class="com.br.projetandoo.vdigital.spring.batch.ProdutoFieldSetMapper" />
+					<bean class="com.br.projetandoo.vdigital.spring.batch.ProdutoPrecosFieldSetMapper" />
 				</property>
 			</bean>
 		</property>
 	</bean>
 
-	<bean id="itemProcessor"
-		class="com.br.projetandoo.vdigital.spring.batch.AtualizaFornecedoresProcessor"
+	<bean id="produtoItemProcessor"
+		class="com.br.projetandoo.vdigital.spring.batch.ProdutoItemProcessor"
 		scope="step">
 	</bean>
 	
-	<bean id="fornecedorRepository" class="com.br.projetandoo.vdigital.repository.FornecedorRepository" />
-
-	<bean id="itemWriter"
+	<bean id="produtoItemWriter"
 		class="org.springframework.batch.item.data.RepositoryItemWriter">
 		<property name="repository" ref="produtoRepository" />
 		<property name="methodName" value="save" />

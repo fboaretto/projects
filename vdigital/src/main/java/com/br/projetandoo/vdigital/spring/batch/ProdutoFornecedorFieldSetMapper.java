@@ -9,9 +9,9 @@ import org.springframework.validation.BindException;
 
 import com.br.projetandoo.vdigital.model.Produto;
 
-public class ProdutoFieldSetMapper implements FieldSetMapper<Produto> {
+public class ProdutoFornecedorFieldSetMapper implements FieldSetMapper<Produto> {
 
-	private static final Logger LOG = LoggerFactory.getLogger(ProdutoFieldSetMapper.class);
+	private static final Logger LOG = LoggerFactory.getLogger(ProdutoFornecedorFieldSetMapper.class);
 
 	public Produto mapFieldSet(FieldSet fsParam) throws BindException {
 
@@ -34,15 +34,6 @@ public class ProdutoFieldSetMapper implements FieldSetMapper<Produto> {
 				produto.setCodigoBarra(fsParam.readString("codigoBarra").trim());
 
 			produto.setNomeFornecedor(fsParam.readString("nomeFornecedor"));
-
-			/*
-			 * produto.setValorCompra(fieldSetParam.readBigDecimal("valorCompra")
-			 * );
-			 * produto.setValorVenda(fieldSetParam.readBigDecimal("valorVenda"
-			 * ));
-			 * produto.setQuantMaxDepo(fieldSetParam.readInt("quantMaxDepo"));
-			 * produto.setQuantMaxLoja(fieldSetParam.readInt("quantMaxLoja"));
-			 */
 
 		} catch (FlatFileParseException ffpe) {
 			LOG.debug("*************************** ERRO> " + ffpe);

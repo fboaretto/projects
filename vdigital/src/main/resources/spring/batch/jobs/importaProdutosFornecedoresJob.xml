@@ -9,7 +9,9 @@
 	<job id="importaProdutosFornecedoresJob" xmlns="http://www.springframework.org/schema/batch">
 		<step id="importaProdutosFornecedoresStep">
 			<tasklet>
-				<chunk reader="itemReader" processor="itemProcessor" writer="itemWriter"
+				<chunk reader="produtoFornecedorItemReader" 
+					processor="fornecedorItemProcessor" 
+					writer="produtoItemWriter"
 					commit-interval="10" />
 				<listeners>
 					<listener ref="produtoItemLogger" />
@@ -29,7 +31,7 @@
 	<bean id="blankLineRecordSeparatorPolicy"
 		class="com.br.projetandoo.vdigital.spring.batch.BlankLineRecordSeparatorPolicy" />
 
-	<bean id="itemReader" class="org.springframework.batch.item.file.FlatFileItemReader"
+	<bean id="produtoFornecedorItemReader" class="org.springframework.batch.item.file.FlatFileItemReader"
 		scope="step">
 		<property name="resource" ref="arquivoEntrada" />
 		<property name="comments">
@@ -52,20 +54,20 @@
 					</bean>
 				</property>
 				<property name="fieldSetMapper">
-					<bean class="com.br.projetandoo.vdigital.spring.batch.ProdutoFieldSetMapper" />
+					<bean class="com.br.projetandoo.vdigital.spring.batch.ProdutoFornecedorFieldSetMapper" />
 				</property>
 			</bean>
 		</property>
 	</bean>
 
-	<bean id="itemProcessor"
+	<bean id="fornecedorItemProcessor"
 		class="com.br.projetandoo.vdigital.spring.batch.AtualizaFornecedoresProcessor"
 		scope="step">
 	</bean>
 	
 	<bean id="fornecedorRepository" class="com.br.projetandoo.vdigital.repository.FornecedorRepository" />
 
-	<bean id="itemWriter"
+	<bean id="produtoItemWriter"
 		class="org.springframework.batch.item.data.RepositoryItemWriter">
 		<property name="repository" ref="produtoRepository" />
 		<property name="methodName" value="save" />

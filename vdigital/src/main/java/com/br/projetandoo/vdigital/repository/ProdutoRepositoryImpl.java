@@ -11,15 +11,15 @@ public class ProdutoRepositoryImpl implements ProdutoRepositoryCustom{
 
 	@PersistenceContext
 	protected EntityManager entityManager;
-	
+
 	@Autowired
 	private ProdutoRepository produtoRepository;
-	
+
 	@Override
 	public Produto save(Produto produto) {
-		
+
 		Produto produtoPesquisado = produtoRepository.findByCodigo(produto.getCodigo());
-		
+
 		if(produtoPesquisado == null) {
 			this.entityManager.persist(produto);
 			return produto;
@@ -29,5 +29,4 @@ public class ProdutoRepositoryImpl implements ProdutoRepositoryCustom{
 			return this.entityManager.merge(produto);
 		}
 	}
-
 }

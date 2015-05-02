@@ -19,12 +19,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {
-		"/spring/batch/jobs/importaProdutosFornecedoresJob.xml",
+		"/spring/batch/jobs/importaRelatorioFinanceiro.xml",
 		"/spring/batch/launch-context.xml" })
-public class ImportaProdutosFornecedoresTest {
+public class ImportaProdutosPrecosTest {
 
 	private static final String TABELA_PRODUTO = "produto";
-	private static final String TABELA_FORNECEDOR = "fornecedor";
 
 	@Autowired
 	private Job job;
@@ -35,26 +34,19 @@ public class ImportaProdutosFornecedoresTest {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
-	@Value("file:src/test/resources/spring/batch/input/produtosFornecedores_umBloco.txt")
+	@Value("file:src/test/resources/spring/batch/input/produtosPrecosCustoVenda_umBloco.txt")
 	private Resource arquivoUnicoBloco;
-
-	@Value("file:src/test/resources/spring/batch/input/produtosFornecedores_cincoBlocos.txt")
-	private Resource arquivoCincoBlocos;
-
-	@Value("file:src/test/resources/spring/batch/input/produtosFornecedores_umBloco_estoquesAtualizados.txt")
-	private Resource arquivoUnicoBlocoEstoquesAtualizados;
 
 	public static int contagemInicial = 0;
 
 	public static int contagemFinal;
 
 
-	@Before
+	//@Before
 	public void setup() throws Exception {
 		jdbcTemplate.update("DELETE FROM produto");
 		jdbcTemplate.update("DELETE FROM fornecedor");
 		assertEquals(contagemInicial, recupaContagemTotalTabela(TABELA_PRODUTO).intValue());
-		assertEquals(contagemInicial, recupaContagemTotalTabela(TABELA_FORNECEDOR).intValue());
 	}
 
 
@@ -68,33 +60,6 @@ public class ImportaProdutosFornecedoresTest {
 		int produtosAdicionados = 9;
 		contagemFinal = recupaContagemTotalTabela(TABELA_PRODUTO);
 
-		assertEquals(contagemInicial + produtosAdicionados, contagemFinal);
-	}
-
-	//@Test
-	public void testImportaProdutos_arquivoMaisDeUmBloco_todosSalvosComSucesso() throws Exception {
-
-		JobParametersBuilder jPBuilber = carregaArquivoTeste(arquivoCincoBlocos);
-
-		jobLauncher.run(job, jPBuilber.toJobParameters());
-
-		int produtosAdicionados = 255;
-		contagemFinal = recupaContagemTotalTabela(TABELA_PRODUTO);
-
-		assertEquals(contagemInicial + produtosAdicionados, contagemFinal);
-	}
-	
-	/*Acertar o teste para rodar duas vezes o job e assim atualizar as tabelas sem precisar
-	 * comentar o @Before*/
-	//@Test
-	public void testImportaeAtualizaProdutos_sucesso() throws Exception {
-
-		JobParametersBuilder jPBuilber = carregaArquivoTeste(arquivoUnicoBlocoEstoquesAtualizados);
-
-		jobLauncher.run(job, jPBuilber.toJobParameters());
-
-		int produtosAdicionados = 51;
-		contagemFinal = recupaContagemTotalTabela(TABELA_PRODUTO);
 		assertEquals(contagemInicial + produtosAdicionados, contagemFinal);
 	}
 
