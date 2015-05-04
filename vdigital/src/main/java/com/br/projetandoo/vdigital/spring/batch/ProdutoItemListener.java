@@ -24,7 +24,21 @@ public class ProdutoItemListener extends ItemListenerSupport<Produto, Produto> {
 		else {
 			logger.error("Um erro ocorreu: ", e);
 		}
+	}
+	
+	@Override
+	public void onProcessError(Produto item, Exception e) {
 		
+		if(e instanceof NullPointerException) {
+			NullPointerException npe = (NullPointerException) e;
+			
+			StringBuilder mensagemErro = new StringBuilder();
+			mensagemErro.append(">>>>>>>>>>>>>>>>>Um erro ocorreu processando o item: [" + item.getCodigo() + "] : " + item.getNome());
+			logger.error(mensagemErro.toString(), npe);
+		}
+		else {
+			logger.error("Um erro ocorreu: ", e);
+		}
 	}
 
 }

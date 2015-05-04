@@ -17,3 +17,4 @@ ABS. ALWAYS 08UN BAS.SC C/A               | 362622  |       1      322        68
 ABS. ALWAYS 08UN BAS.SC S/A               | 362634  |       1       70        101,50        175,00       175,00         1,45
 ABS. ALWAYS 08UN BAS.SV S/A               | 953023  |       1       25         44,75         62,50        62,50         1,79
 ABS. ALWAYS 08UN NOTURNO C/A              | 338090  |       1       36        139,32        215,64       215,64         3,87
+ABS. CAREFREE 15UN NEUTRALIZE             | 375619  |       1        1          2,69          3,70         3,70         2,69

@@ -17,7 +17,13 @@ public class ProdutoItemProcessor implements ItemProcessor<Produto, Produto> {
 	public Produto process(Produto produto) throws Exception {
 
 		Produto produtoPesquisado = produtoRepository.findByCodigo(produto.getCodigo());
+		
+		if(produtoPesquisado == null)
+			return null;
+		
 		produto.setFornecedor(produtoPesquisado.getFornecedor());
+		produto.setEstoque(produtoPesquisado.getEstoque());
+		produto.setCodigoBarra(produtoPesquisado.getCodigoBarra());
 		
 		BigDecimal valorVolume = produto.getValorVenda();
 		int volume = produto.getVolume();
