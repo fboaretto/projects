@@ -12,19 +12,22 @@ public class ProdutoItemProcessor implements ItemProcessor<Produto, Produto> {
 
 	@Autowired
 	private ProdutoRepository produtoRepository;
-	
+
 	@Override
 	public Produto process(Produto produto) throws Exception {
 
-		Produto produtoPesquisado = produtoRepository.findByCodigo(produto.getCodigo());
+		Produto produtoPesquisado = new Produto();
 		
-		if(produtoPesquisado == null)
+		try {
+			produtoPesquisado = produtoRepository.findByCodigo(produto.getCodigo());
+		} catch (NullPointerException npe) {
 			return null;
-		
+		}
+
 		produto.setFornecedor(produtoPesquisado.getFornecedor());
 		produto.setEstoque(produtoPesquisado.getEstoque());
 		produto.setCodigoBarra(produtoPesquisado.getCodigoBarra());
-		
+
 		BigDecimal valorVolume = produto.getValorVenda();
 		int volume = produto.getVolume();
 

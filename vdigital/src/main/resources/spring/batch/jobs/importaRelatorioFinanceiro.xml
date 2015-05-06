@@ -12,21 +12,49 @@
 				<chunk reader="produtoItemReader"
 					processor="produtoItemProcessor" 
 					writer="produtoItemWriter"
-					commit-interval="10" />
-						<!-- skip-limit="100000">
-						<skippable-exception-classes>
-							<include class="java.lang.NullPointerException" />
-						</skippable-exception-classes>
-						</chunk> -->
+					commit-interval="10"
+					skip-limit="999999">
+					<streams>
+          				<stream ref="errorItemWriter"/>
+        			</streams>				
+					<skippable-exception-classes>
+          				<include class="" />
+          				<include class="" />
+        			</skippable-exception-classes>
+				</chunk>
 				<listeners>
 					<listener ref="produtoItemLogger" />
+					<listener ref="skipListener" />
 				</listeners>	
 			</tasklet>
 		</step>
 	</job>
 	
 	<bean id="produtoItemLogger"
-		class="com.br.projetandoo.vdigital.spring.batch.ProdutoItemListener" />
+		class="com.br.projetandoo.vdigital.spring.batch.ProdutoListener" />
+		
+	<bean id="skipListener" class="com.br.projetandoo.vdigital.spring.batch.ProdutoSkipListener"
+      resource-ref="errorItemWriter"/>
+      
+    <bean id="errorItemWriter"
+      class="org.springframework.batch.item.file.FlatFileItemWriter">
+      <property name="resource" ref="" />
+      <property name="shouldDeleteIfExists=" value="true" />
+      <property name="lineAggregator">
+		  <bean	class="org.springframework.batch.item.file.transform.DelimitedLineAggregator">
+			<property name="delimiter" value="|" />
+			<property name="fieldExtractor">
+			  <bean	class="org.springframework.batch.item.file.transform.BeanWrapperFieldExtractor">
+				<property name="names" value="nome, codigo, volume, valorVenda, valorCusto" />
+			  </bean>
+			</property>
+		  </bean>
+	  </property>
+    </bean>
+      
+    <bean id="arquivoErroSaida" class="org.springframework.core.io.FileSystemResource" scope="step">
+  	  <constructor-arg value="resource/data/errors.txt"/>
+	</bean>  
 
 	<bean id="arquivoEntrada" class="org.springframework.core.io.FileSystemResource" scope="step">
 		<constructor-arg value="#{jobParameters[inputFile]}" />

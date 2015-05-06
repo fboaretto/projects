@@ -21,7 +21,7 @@
 	</job>
 	
 	<bean id="produtoItemLogger"
-		class="com.br.projetandoo.vdigital.spring.batch.ProdutoItemListener" />
+		class="com.br.projetandoo.vdigital.spring.batch.ProdutoListener" />
 	
 	<bean id="arquivoEntrada" class="org.springframework.core.io.FileSystemResource"
 		scope="step">
