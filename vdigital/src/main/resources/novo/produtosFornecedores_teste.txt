@@ -1,0 +1,177 @@
+\00\00\00MARKAO COSMETICOS                                          Listagem do Estoque Atual                                Qua    0001/0001
+Gestao Comercial                                                    Qualquer                                        22/04/2015 16:49   
+----------------------------------------------------------------------------------------------------------------------------ESTOQL--   
+ Filial:  03  MARKAO 3 NILOPOLIS                                                                                                       
+ Fabricante                                                                                                                            
+ Descricao do Produto                    | Codigo | Estoque  | UM | Qtd. Ped.|Qtd.Transf|Est.L\A2gico| Cod. Barra    | Fabricante        
+------------------------------------------------------------------------------------------------------------------------------------   
+                                                                                                                                       
+ A/Q REGEN TERAPY BALSAMO S/ENX.150G     | 338310 |     5,000| UN |     ,000 |     ,000 |     5,000|  789600918095 | BIODERM           
+ A/Q REGEN TERAPY CONDICIONADOR 180G     | 338285 |     2,000| UN |     ,000 |     ,000 |     2,000| 7898289780781 | BIODERM           
+ A/Q REGEN TERAPY CR.ESTIMULADOR 330G    | 905185 |    15,000| UN |     ,000 |     ,000 |    15,000| 7898289780804 | BIODERM           
+ A/Q REGEN TERAPY SHAMPOO 200ML          | 338309 |    13,000| UN |   12,000 |     ,000 |    25,000| 7898289780774 | BIODERM           
+ ABAIXADOR P/LINGUA                      | 973687 |     1,000| UN |   50,000 |     ,000 |    51,000|  789631820115 | NT FLEX IND. COM. 
+ ABS. ALWAYS 08UN BAS.SC C/A             | 362622 |   322,000| UN |     ,000 |     ,000 |   322,000| 7590002025314 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN BAS.SC S/A             | 362634 |    70,000| UN |     ,000 |     ,000 |    70,000| 7590002025321 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN BAS.SV C/A             | 953015 |          | UN |     ,000 |     ,000 |          | 7501001156176 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN BAS.SV S/A             | 953023 |    24,000| UN |     ,000 |     ,000 |    24,000| 7501001156190 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN NOTURNO C/A            | 338090 |    36,000| UN |   12,000 |     ,000 |    48,000| 7501001169374 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PINK NOT.C/A           | 127441 |          | UN |     ,000 |     ,000 |          | 7506195129876 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PINK SC S/A            | 141932 |          | UN |     ,000 |     ,000 |          | 7506195129869 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PINK SV C/A            | 127433 |    21,000| UN |   12,000 |     ,000 |    33,000| 7506195129838 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PLAT. C/A ULTRA NOT.   | 180750 |          | UN |     ,000 |     ,000 |          | 7506295383147 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PLAT.INT.REG.          | 180660 |          | UN |     ,000 |     ,000 |          | 7506295397304 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PLAT.INT.SUP.          | 180679 |          | UN |     ,000 |     ,000 |          | 7506295397311 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PLAT.SC C/A NOT.       | 180725 |          | UN |     ,000 |     ,000 |          | 7506295383116 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN PLAT.SC C/A ULTRA      | 180741 |          | UN |     ,000 |     ,000 |          | 7506295383130 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN ULTRA NOT.C/A          | 357878 |    54,000| UN |   24,000 |     ,000 |    78,000| 7590002012383 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 08UN ULTRA SC C/A           | 357866 |    10,000| UN |     ,000 |     ,000 |    10,000| 7501001103934 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 12UN ACT.SC NOT.C/A         | 180717 |          | UN |     ,000 |     ,000 |          | 7506295325987 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 12UN PINK NOT.C/A           | 185514 |          | UN |     ,000 |     ,000 |          | 7506295325994 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 15UN REG.S/PERFUME          | 027285 |     4,000| UN |     ,000 |     ,000 |     4,000| 7501007499758 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 16UN BAS.SC C/A             | 027170 |    42,000| UN |     ,000 |     ,000 |    42,000| 7501007412924 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 16UN P.TOTAL NOT.C/A        | 179107 |          | UN |     ,000 |     ,000 |          | 7506195126035 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 16UN PLAT.PROT.DIARIO       | 180687 |          | UN |     ,000 |     ,000 |          | 7506295386414 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 16UN PLAT.SC C/A NORMAL     | 180733 |          | UN |     ,000 |     ,000 |          | 7506295383109 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 20UN PALT.DIARIO MULTI      | 180695 |          | UN |     ,000 |     ,000 |          | 7506295386391 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 20UN PLAT.DIARIO NORMAL     | 180709 |          | UN |     ,000 |     ,000 |          | 7506295386407 | DISTR.(PROCTER GAM
+ ABS. ALWAYS 32UN BAS.SC C/A             | 179123 |    84,000| UN |     ,000 |     ,000 |    84,000| 7506309837475 | DISTR.(PROCTER GAM
+ ABS. ALWAYS ACT.SC ABS+NOT+FRASQ.       | 141150 |          | UN |     ,000 |     ,000 |          | 7506295340829 | DISTR.(PROCTER GAM
+ ABS. ALWAYS L32P24 ACT.NOTURNO          | 179115 |          | UN |     ,000 |     ,000 |          | 7506195147443 | DISTR.(PROCTER GAM
+ ABS. ALWAYS L32P24 ACT.SC C/A           | 196281 |          | UN |     ,000 |     ,000 |          | 7506195147429 | DISTR.(PROCTER GAM
+ ABS. ALWAYS PINK SV ABS+NOT+FRASQ.      | 172587 |    25,000| UN |     ,000 |     ,000 |    25,000| 7506309843889 | DISTR.(PROCTER GAM
+ ABS. AME 08UN CLASSIC S/A               | 933154 |          | UN |     ,000 |     ,000 |          | 7898095755072 | DISTR.( DISTRIBUID
+ ABS. AME 08UN EX.CARE C/A               | 933170 |          | UN |     ,000 |     ,000 |          | 7898095755058 | DISTR.( DISTRIBUID
+ ABS. AME 08UN EX.CARE S/A               | 933162 |          | UN |     ,000 |     ,000 |          |               | DISTR.( DISTRIBUID
+ ABS. CAREFREE 15UN BRISA                | 325581 |          | UN |   12,000 |     ,000 |    12,000| 7891010814434 | DISTR.( DISTRIBUID
+ ABS. CAREFREE 15UN NEUTRALIZE           | 375619 |     1,000| UN |   24,000 |     ,000 |    25,000| 7891010015268 | DISTR.( DISTRIBUID
+ ABS. CAREFREE 15UN ORIGINAL             | 324610 |          | UN |    6,000 |     ,000 |     6,000| 7891010087722 | DISTR.( DISTRIBUID
+ ABS. CAREFREE ORIG. L15P12 C/PERF.      | 219095 |          | UN |     ,000 |     ,000 |          | 7891010582920 | DISTR.( DISTRIBUID
+ ABS. INT.DAYS 15UN C/A                  | 934630 |    16,000| UN |     ,000 |     ,000 |    16,000| 7896007540266 | DISTR.( DISTRIBUID
+ ABS. INT.DAYS 15UN S/A                  | 941254 |          | UN |   24,000 |     ,000 |    24,000| 7896007540259 | DISTR.( DISTRIBUID
+ ABS. INT.DAYS 15UN S/A CONT.ODOR.       | 197830 |          | UN |   24,000 |     ,000 |    24,000| 7896007546596 | DISTR.( DISTRIBUID
+ ABS. INT.DAYS 15UN TEENS                | 941491 |          | UN |     ,000 |     ,000 |          | 7896007541386 | DISTR.( DISTRIBUID
+ ABS. INT.DAYS L15P12 S/A                | 108277 |          | UN |     ,000 |     ,000 |          | 7896007544271 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN BAS.SV C/A            | 966907 |          | UN |     ,000 |     ,000 |          | 7896007541409 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN BAS.SV S/A            | 985618 |          | UN |     ,000 |     ,000 |          | 7896007541430 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN DEC. C/A              | 075514 |          | UN |     ,000 |     ,000 |          | 7896007543762 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN DISCRET SV C/A        | 900310 |          | UN |     ,000 |     ,000 |          | 7702425527157 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN NOT.C/A               | 898871 |    94,000| UN |     ,000 |     ,000 |    94,000| 7896007540662 | DISTR.( DISTRIBUID
+\00\00MARKAO COSMETICOS                                          Listagem do Estoque Atual                                Qua    0002/0002
+Gestao Comercial                                                    Qualquer                                        22/04/2015 16:49   
+----------------------------------------------------------------------------------------------------------------------------ESTOQL--   
+ Filial:  03  MARKAO 3 NILOPOLIS                                                                                                       
+ Fabricante                                                                                                                            
+ Descricao do Produto                    | Codigo | Estoque  | UM | Qtd. Ped.|Qtd.Transf|Est.L\A2gico| Cod. Barra    | Fabricante        
+------------------------------------------------------------------------------------------------------------------------------------   
+                                                                                                                                       
+ ABS. INT.GEL 08UN SC C/A                | 314979 |     7,000| UN |     ,000 |     ,000 |     7,000| 7896007542154 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN SC S/A                | 305447 |    23,000| UN |     ,000 |     ,000 |    23,000| 7896007543151 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN SV C/A                | 304063 |     1,000| UN |     ,000 |     ,000 |     1,000| 7896007540617 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN SV C/A SUPREME        | 158886 |          | UN |     ,000 |     ,000 |          | 7896007542161 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN SV S/A                | 305654 |    39,000| UN |     ,000 |     ,000 |    39,000| 7896007543229 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 08UN TEEN SV C/A           | 946159 |    29,000| UN |     ,000 |     ,000 |    29,000| 7896007541058 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 16UN SC C/A                | 103410 |    28,000| UN |     ,000 |     ,000 |    28,000| 7896007541942 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 16UN SV C/A                | 945926 |          | UN |     ,000 |     ,000 |          | 7896007540655 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 16UN SV S/A                | 094551 |    28,000| UN |     ,000 |     ,000 |    28,000| 7896007540648 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 20UN NOT.SV C/A 10%        | 178046 |    13,000| UN |     ,000 |     ,000 |    13,000| 7896007545742 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 20UN SC C/A 10%            | 178011 |     1,000| UN |     ,000 |     ,000 |     1,000| 7896007545728 | DISTR.( DISTRIBUID
+ ABS. INT.GEL 20UN SV C/A 10%            | 178020 |          | UN |     ,000 |     ,000 |          | 7896007545735 | DISTR.( DISTRIBUID
+ ABS. INT.GEL L16P14 SC C/A T.PROT.      | 127590 |    27,000| UN |     ,000 |     ,000 |    27,000| 7896007545100 | DISTR.( DISTRIBUID
+ ABS. INT.GEL L16P14 SV C/A              | 127581 |     1,000| UN |     ,000 |     ,000 |     1,000| 7896007545094 | DISTR.( DISTRIBUID
+ ABS. INT.GEL L20P16 NOT.SV C/A          | 140120 |          | UN |     ,000 |     ,000 |          | 7896007543021 | DISTR.( DISTRIBUID
+ ABS. INT.TAMPAX 8UN REGULAR             | 952965 |          | UN |     ,000 |     ,000 |          | 4015400151746 | DISTR.(PROCTER GAM
+ ABS. INTIMUS C/8 MEDIO                  | 986320 |    13,000| UN |     ,000 |     ,000 |    13,000| 7896007541867 | DISTR.( DISTRIBUID
+ ABS. INTIMUS C/8 MINI                   | 986339 |    34,000| UN |     ,000 |     ,000 |    34,000| 7896007541850 | DISTR.( DISTRIBUID
+ ABS. INTIMUS C/8 SUPER                  | 986312 |    29,000| UN |     ,000 |     ,000 |    29,000| 7896007541874 | DISTR.( DISTRIBUID
+ ABS. NATURELLA 08UN NORMAL C/A          | 079234 |          | UN |     ,000 |     ,000 |          | 7506195158715 | DISTR.(PROCTER GAM
+ ABS. NATURELLA 08UN NORMAL S/A          | 079226 |          | UN |     ,000 |     ,000 |          | 7506195158739 | DISTR.(PROCTER GAM
+ ABS. NATURELLA 15UN PROT.DIARIO         | 958327 |    11,000| UN |     ,000 |     ,000 |    11,000| 7506195163016 | DISTR.(PROCTER GAM
+ ABS. O.B 06UN MEDIO P/BOLSA             | 917698 |          | UN |     ,000 |     ,000 |          | 7891010884901 | DISTR.( DISTRIBUID
+ ABS. O.B 10UN MEDIO                     | 303069 |    12,000| UN |     ,000 |     ,000 |    12,000| 7891010010546 | DISTR.( DISTRIBUID
+ ABS. O.B 10UN MINI                      | 303068 |          | UN |     ,000 |     ,000 |          | 7891010010515 | DISTR.( DISTRIBUID
+ ABS. O.B 10UN SUPER                     | 303070 |    17,000| UN |     ,000 |     ,000 |    17,000| 7891010010577 | DISTR.( DISTRIBUID
+ ABS. POS-PARTO 15UN ULTRA GEL           | 375155 |     2,000| UN |     ,000 |     ,000 |     2,000| 7898325960306 | DISTR.( DISTRIBUID
+ ABS. S.LIVRE 08UN NOT.SV C/A            | 364212 |          | UN |     ,000 |     ,000 |          | 7891010027162 | DISTR.(JOHNSON)   
+ ABS. S.LIVRE ADAPT SV S/A               | 366584 |          | UN |     ,000 |     ,000 |          | 7891010007027 | DISTR.(JOHNSON)   
+ ABS. S.LIVRE ESP. SC S/A                | 987556 |          | UN |     ,000 |     ,000 |          | 7891010808020 | DISTR.(JOHNSON)   
+ ABS. S.LIVRE ESP. SV S/A                | 965390 |          | UN |     ,000 |     ,000 |          | 7891010503031 | DISTR.(JOHNSON)   
+ ABS. S.LIVRE L8P7 ESP.SC C/A            | 006490 |          | UN |     ,000 |     ,000 |          | 7891010808037 | DISTR.(JOHNSON)   
+ ABS. S.LIVRE L8P7 ESP.SV C/A            | 966044 |          | UN |     ,000 |     ,000 |          | 7891010503024 | DISTR.(JOHNSON)   
+ ABS. S.LIVRE NOR.SV C/A                 | 303016 |          | UN |     ,000 |     ,000 |          | 7891010001629 | DISTR.(JOHNSON)   
+ ABS. S.LIVRE SLIN. SC C/A               | 987963 |          | UN |     ,000 |     ,000 |          | 7891010014001 | DISTR.(JOHNSON)   
+ ABS. SYM 08UN NOT.C/A                   | 910502 |    18,000| UN |     ,000 |     ,000 |    18,000| 7896110003740 | DISTR.( DISTRIBUID
+ ABS. SYM C/A 8UN                        | 370257 |    12,000| UN |     ,000 |     ,000 |    12,000| 7896110004396 | DISTR.( DISTRIBUID
+ ABS. SYM GIRL C/A 8UN                   | 005265 |    15,000| UN |     ,000 |     ,000 |    15,000| 7896110003221 | DISTR.( DISTRIBUID
+ ABS. SYM L8P7 360 SV C/A                | 172579 |     5,000| UN |   12,000 |     ,000 |    17,000| 7896110007700 | DISTR.( DISTRIBUID
+ ABS. SYM L8PA 360 SC C/A                | 169950 |    26,000| UN |     ,000 |     ,000 |    26,000| 7896110007908 | DISTR.( DISTRIBUID
+ ACESSORIO P/UNHA IMPALA CRISTAIS PRATA  | 137145 |          | UN |     ,000 |     ,000 |          | 7891060946345 | AVAMILLER         
+ ACESSORIO P/UNHA IMPALA R.DUI-021I      | 138052 |     3,000| UN |     ,000 |     ,000 |     3,000| 7891060945966 | FORA DE LINHA     
+ ACQUAFLORA COMPLEXO RECONSTRUTOR 60ML   | 056285 |     4,000| UN |   12,000 |     ,000 |    16,000| 7898903652234 | ACQUAFLORA        
+ ACQUAFLORA CONCENTRADO QUERATINA 20ML   | 056323 |    38,000| UN |   48,000 |     ,000 |    86,000| 7898903652265 | ACQUAFLORA        
+ ACQUAFLORA COND.240ML S.O.S             | 206023 |     3,000| UN |    6,000 |     ,000 |     9,000| 7898566290644 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML ANTIOX.NOR/MISTO  | 073759 |    17,000| UN |    6,000 |     ,000 |    23,000| 7898943477200 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML ANTIOX.SEC/DANIF  | 073767 |    16,000| UN |    6,000 |     ,000 |    22,000| 7898943477224 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML CONT.VOLUME       | 056048 |          | UN |     ,000 |     ,000 |          | 7898903652494 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML EFEITO LISO       | 056056 |     6,000| UN |   12,000 |     ,000 |    18,000| 7898903652579 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML EQ.OLEO.NOR/MIS   | 073732 |     7,000| UN |    3,000 |     ,000 |    10,000| 7898943477262 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML EQ.QUEDA NOR/MIS  | 081514 |     6,000| UN |    6,000 |     ,000 |    12,000| 7898903652890 | ACQUAFLORA        
+\00\00MARKAO COSMETICOS                                          Listagem do Estoque Atual                                Qua    0003/0003
+Gestao Comercial                                                    Qualquer                                        22/04/2015 16:49   
+----------------------------------------------------------------------------------------------------------------------------ESTOQL--   
+ Filial:  03  MARKAO 3 NILOPOLIS                                                                                                       
+ Fabricante                                                                                                                            
+ Descricao do Produto                    | Codigo | Estoque  | UM | Qtd. Ped.|Qtd.Transf|Est.L\A2gico| Cod. Barra    | Fabricante        
+------------------------------------------------------------------------------------------------------------------------------------   
+                                                                                                                                       
+ ACQUAFLORA COND.300ML EQ.QUEDA SEC/D    | 081441 |          | UN |     ,000 |     ,000 |          | 7898903652913 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML FORMA             | 073724 |    12,000| UN |    6,000 |     ,000 |    18,000| 7898943477415 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML HID.INTENSIVA     | 055980 |    11,000| UN |   12,000 |     ,000 |    23,000| 7898903652166 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML NUTR.CELULAR      | 056021 |    13,000| UN |   36,000 |     ,000 |    49,000| 7898903652401 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML POS COLORACAO     | 188742 |     9,000| UN |    6,000 |     ,000 |    15,000| 7898566290583 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML POS PROGRESSIVA   | 217688 |     6,000| UN |   12,000 |     ,000 |    18,000| 7898566290668 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML RECONSTRUTOR      | 055971 |    22,000| UN |   12,000 |     ,000 |    34,000| 7898903652203 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML REEQU.ESTRUTURAL  | 073740 |    14,000| UN |   12,000 |     ,000 |    26,000| 7898903652005 | ACQUAFLORA        
+ ACQUAFLORA COND.300ML SOL MAR PISCINA   | 056030 |          | UN |     ,000 |     ,000 |          | 7898903652357 | ACQUAFLORA        
+ ACQUAFLORA DEFRIZ.CONT.VOLUME 120ML     | 110484 |          | UN |     ,000 |     ,000 |          | 7898943477064 | ACQUAFLORA        
+ ACQUAFLORA EE CREAM 240ML S.O.S         | 206031 |    10,000| UN |     ,000 |     ,000 |    10,000| 7898566290699 | ACQUAFLORA        
+ ACQUAFLORA FLUIDO 120ML POS PROGRESSIVA | 217696 |     6,000| UN |     ,000 |     ,000 |     6,000| 7898566290675 | ACQUAFLORA        
+ ACQUAFLORA FLUIDO 120ML PROTETOR        | 097291 |    49,000| UN |     ,000 |     ,000 |    49,000| 7898943477514 | ACQUAFLORA        
+ ACQUAFLORA FLUIDO 12ML CONT.VOLUME      | 111073 |          | UN |     ,000 |     ,000 |          | 7898943477071 | ACQUAFLORA        
+ ACQUAFLORA FLUIDO 12ML HIDR.INTENSIVA   | 111081 |    46,000| UN |     ,000 |     ,000 |    46,000| 7898903652937 | ACQUAFLORA        
+ ACQUAFLORA FLUIDO 12ML MATIZADOR        | 197997 |    25,000| UN |   24,000 |     ,000 |    49,000| 7898566290651 | ACQUAFLORA        
+ ACQUAFLORA FLUIDO 12ML NUT.CELULAR      | 056331 |    85,000| UN |   48,000 |     ,000 |   133,000| 7898903652432 | ACQUAFLORA        
+ ACQUAFLORA FLUIDO 12ML POS COLORACAO    | 193002 |    22,000| UN |   24,000 |     ,000 |    46,000| 7898566290613 | ACQUAFLORA        
+ ACQUAFLORA FLUIDO 60ML REEQ.ESTRUTURAL  | 056307 |     2,000| UN |     ,000 |     ,000 |     2,000| 7898903652609 | ACQUAFLORA        
+ ACQUAFLORA FLUIDO 60ML SELANTE VEGETAL  | 206414 |          | UN |     ,000 |     ,000 |          | 7898943477040 | ACQUAFLORA        
+ ACQUAFLORA GLOSS  60ML P/CABELOS        | 056277 |     6,000| UN |   12,000 |     ,000 |    18,000| 7898903652449 | ACQUAFLORA        
+ ACQUAFLORA HID.S/ENX.240ML CONT.VOLUME  | 056161 |    15,000| UN |    6,000 |     ,000 |    21,000| 7898903652500 | ACQUAFLORA        
+ ACQUAFLORA HID.S/ENX.240ML EFEITO.LISO  | 056153 |    13,000| UN |    6,000 |     ,000 |    19,000| 7898903652586 | ACQUAFLORA        
+ ACQUAFLORA HID.S/ENX.240ML FORMA        | 073830 |    17,000| UN |   12,000 |     ,000 |    29,000| 7898943477422 | ACQUAFLORA        
+ ACQUAFLORA HID.S/ENX.240ML INTENSIVO    | 056072 |    14,000| UN |   12,000 |     ,000 |    26,000| 7898903652173 | ACQUAFLORA        
+ ACQUAFLORA HID.S/ENX.240ML NUT.CELULAR  | 056129 |    15,000| UN |   12,000 |     ,000 |    27,000| 7898903652418 | ACQUAFLORA        
+ ACQUAFLORA HID.S/ENX.240ML POS COLORACAO| 188769 |     8,000| UN |    6,000 |     ,000 |    14,000| 7898566290590 | ACQUAFLORA        
+ ACQUAFLORA HID.S/ENX.240ML RECONSTRUTOR | 056102 |    12,000| UN |    6,000 |     ,000 |    18,000| 7898903652210 | ACQUAFLORA        
+ ACQUAFLORA HID.S/ENX.240ML REEQUI.ESTRUT| 073821 |     8,000| UN |    6,000 |     ,000 |    14,000| 7898943477019 | ACQUAFLORA        
+ ACQUAFLORA KIT SELANTE VEGETAL          | 154864 |     1,000| UN |    6,000 |     ,000 |     7,000| 7898943477057 | ACQUAFLORA        
+ ACQUAFLORA LEITE DE ARGAN 12ML          | 133913 |    10,000| UN |   24,000 |     ,000 |    34,000| 7898566290545 | ACQUAFLORA        
+ ACQUAFLORA MASC.HID.250G ANTIOXIDANTE   | 073848 |    15,000| UN |   36,000 |     ,000 |    51,000| 7898943477248 | ACQUAFLORA        
+ ACQUAFLORA MASC.HID.250G CONT.VOLUME    | 056250 |     6,000| UN |     ,000 |     ,000 |     6,000| 7898903652517 | ACQUAFLORA        
+ ACQUAFLORA MASC.HID.250G EFEITO.LISO    | 056234 |    17,000| UN |    6,000 |     ,000 |    23,000| 7898903652593 | ACQUAFLORA        
+ ACQUAFLORA MASC.HID.250G ELIXIR         | 129967 |    11,000| UN |     ,000 |     ,000 |    11,000| 7898566290439 | ACQUAFLORA        
+ ACQUAFLORA MASC.HID.250G INTENSIVA      | 056188 |    20,000| UN |   48,000 |     ,000 |    68,000| 7898903652180 | ACQUAFLORA        
+ ACQUAFLORA MASC.HID.250G NUT.CELULAR    | 056196 |    22,000| UN |  120,000 |     ,000 |   142,000| 7898903652425 | ACQUAFLORA        
+ ACQUAFLORA MASC.HID.250G POS COLORACAO  | 188750 |    10,000| UN |    6,000 |     ,000 |    16,000| 7898566290606 | ACQUAFLORA        
+ ACQUAFLORA MASC.HID.250G RECONSTRUTORA  | 056218 |     1,000| UN |  120,000 |     ,000 |   121,000| 7898903652227 | ACQUAFLORA        
+ ACQUAFLORA MASC.HID.250G REE.ESTRUTURAL | 097216 |    31,000| UN |   24,000 |     ,000 |    55,000| 7898943477507 | ACQUAFLORA        
+ ACQUAFLORA MASC.HID.250G SOL MAR PISCIN | 056226 |          | UN |     ,000 |     ,000 |          | 7898903652371 | ACQUAFLORA        
+ ACQUAFLORA REPARADOR ELIXIR 60ML        | 122482 |    15,000| UN |   12,000 |     ,000 |    27,000| 7898566290408 | ACQUAFLORA        
+ ACQUAFLORA SERUM TERMO ATIV. 60ML       | 056315 |    29,000| UN |   12,000 |     ,000 |    41,000| 7898903652272 | ACQUAFLORA        
+ ACQUAFLORA SH.240ML ANTIOX.MATIZADOR    | 133905 |          | UN |   48,000 |     ,000 |    48,000| 7898566290460 | ACQUAFLORA        
+ ACQUAFLORA SH.240ML EQUIL.CASPA NOR/MIS | 097240 |          | UN |     ,000 |     ,000 |          | 8898904477439 | ACQUAFLORA        
+ ACQUAFLORA SH.240ML EQUIL.CASPA SEC/DAN.| 097259 |          | UN |     ,000 |     ,000 |          | 7898943477453 | ACQUAFLORA        
+ ACQUAFLORA SH.240ML POS COLORACAO       | 188777 |     6,000| UN |   12,000 |     ,000 |    18,000| 7898566290576 | ACQUAFLORA        
+ ACQUAFLORA SH.240ML S.O.S               | 206015 |     9,000| UN |    6,000 |     ,000 |    15,000| 7898566290637 | ACQUAFLORA        
+ ACQUAFLORA SH.300ML ANT.OX.NOR/MISTOS   | 073716 |    17,000| UN |   36,000 |     ,000 |    53,000| 7898943477194 | ACQUAFLORA        
+ ACQUAFLORA SH.300ML ANT.OX.SEC/DANIFIC  | 073708 |    10,000| UN |   12,000 |     ,000 |    22,000| 7898943477217 | ACQUAFLORA        
+ ACQUAFLORA SH.300ML CONT.VOLUME         | 055947 |          | UN |     ,000 |     ,000 |          | 7898903652487 | ACQUAFLORA        

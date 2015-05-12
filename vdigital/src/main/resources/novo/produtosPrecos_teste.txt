@@ -1,0 +1,118 @@
+MARKAO COSMETICOS                                                                                                   Qua    0001/0001
+Gestao Comercial                                     ++ RELATORIO FINANCEIRO DO ESTOQUE ++                          22/04/2015 16:52
+----------------------------------------------------------------------------------------------------------------------------ESTOQF--
+
+----------------------------------------------------------------------------------------------------------------------------
+ FILIAL:   3   NOME: MARKAO 3 NILOPOLIS                   Saldo em 22/04/2015
+------------------------------------------+---------+-----------------------------------------------------------------------
+      D  E  S  C  R  I  C  A  O           | Codigo  | Qt.Item   Qt.Vol     VLR CUSTO     VLR VENDA    PRC PRAT.    PRC CUSTO
+------------------------------------------+---------+-----------------------------------------------------------------------
+TOTAL GERAL_____________________________  |         |    9871   167325    1120856,32    1775767,00   1775767,00
+A/Q REGEN TERAPY BALSAMO S/ENX.150G       | 338310  |       1        5         66,10         99,95        99,95        13,22
+A/Q REGEN TERAPY CONDICIONADOR 180G       | 338285  |       1        2         27,78         45,98        45,98        13,89
+A/Q REGEN TERAPY CR.ESTIMULADOR 330G      | 905185  |       1       15        278,70        419,85       419,85        18,58
+A/Q REGEN TERAPY SHAMPOO 200ML            | 338309  |       1       13        197,60        298,87       298,87        15,20
+ABAIXADOR P/LINGUA                        | 973687  |       1        1          3,11          5,20         5,20         3,11
+ABS. ALWAYS 08UN BAS.SC C/A               | 362622  |       1      322        682,64       1284,78      1284,78         2,12
+ABS. ALWAYS 08UN BAS.SC S/A               | 362634  |       1       70        101,50        175,00       175,00         1,45
+ABS. ALWAYS 08UN BAS.SV S/A               | 953023  |       1       25         44,75         62,50        62,50         1,79
+ABS. ALWAYS 08UN NOTURNO C/A              | 338090  |       1       36        139,32        215,64       215,64         3,87
+ABS. ALWAYS 08UN PINK SV C/A              | 127433  |       1       21         58,17         98,49        98,49         2,77
+ABS. ALWAYS 08UN ULTRA NOT.C/A            | 357878  |       1       54        212,22        367,20       367,20         3,93
+ABS. ALWAYS 08UN ULTRA SC C/A             | 357866  |       1       10         33,70         56,00        56,00         3,37
+ABS. ALWAYS 15UN REG.S/PERFUME            | 027285  |       1        4         10,68         18,00        18,00         2,67
+ABS. ALWAYS 16UN BAS.SC C/A               | 027170  |       1       42        197,40        251,58       251,58         4,70
+ABS. ALWAYS 32UN BAS.SC C/A               | 179123  |       1       84        714,84        966,00       966,00         8,51
+ABS. ALWAYS PINK SV ABS+NOT+FRASQ.        | 172587  |       1       25        234,25        349,75       349,75         9,37
+ABS. CAREFREE 15UN NEUTRALIZE             | 375619  |       1        1          2,69          3,70         3,70         2,69
+ABS. INT.DAYS 15UN C/A                    | 934630  |       1       17         44,54         66,13        66,13         2,62
+ABS. INT.GEL 08UN NOT.C/A                 | 898871  |       1       94        251,92        347,80       347,80         2,68
+ABS. INT.GEL 08UN SC C/A                  | 314979  |       1        7         11,27         17,50        17,50         1,61
+ABS. INT.GEL 08UN SC S/A                  | 305447  |       1       23         39,79         68,77        68,77         1,73
+ABS. INT.GEL 08UN SV C/A                  | 304063  |       1        1          1,61          2,50         2,50         1,61
+ABS. INT.GEL 08UN SV S/A                  | 305654  |       1       39         67,47        116,61       116,61         1,73
+ABS. INT.GEL 08UN TEEN SV C/A             | 946159  |       1       29         53,36         86,71        86,71         1,84
+ABS. INT.GEL 16UN SC C/A                  | 103410  |       1       28         91,28        125,72       125,72         3,26
+ABS. INT.GEL 16UN SV S/A                  | 094551  |       1       28         91,84        139,72       139,72         3,28
+ABS. INT.GEL 20UN NOT.SV C/A 10%          | 178046  |       1       13         83,85        129,87       129,87         6,45
+ABS. INT.GEL 20UN SC C/A 10%              | 178011  |       1        1          3,91          5,99         5,99         3,91
+ABS. INT.GEL L16P14 SC C/A T.PROT.        | 127590  |       1       27         86,94        134,73       134,73         3,22
+ABS. INT.GEL L16P14 SV C/A                | 127581  |       1        1          3,20          4,49         4,49         3,20
+ABS. INTIMUS C/8 MEDIO                    | 986320  |       1       13         45,89         75,40        75,40         3,53
+ABS. INTIMUS C/8 MINI                     | 986339  |       1       34        120,02        193,46       193,46         3,53
+ABS. INTIMUS C/8 SUPER                    | 986312  |       1       29        102,37        168,20       168,20         3,53
+ABS. NATURELLA 15UN PROT.DIARIO           | 958327  |       1       11         35,20         49,50        49,50         3,20
+ABS. O.B 10UN MEDIO                       | 303069  |       1       12         49,44         91,20        91,20         4,12
+ABS. O.B 10UN SUPER                       | 303070  |       1       17         88,06        129,20       129,20         5,18
+ABS. POS-PARTO 15UN ULTRA GEL             | 375155  |       1        2         10,20         15,98        15,98         5,10
+ABS. SYM 08UN NOT.C/A                     | 910502  |       1       18         33,30         52,20        52,20         1,85
+ABS. SYM C/A 8UN                          | 370257  |       1       12         16,56         22,68        22,68         1,38
+ABS. SYM GIRL C/A 8UN                     | 005265  |       1       15         22,05         29,85        29,85         1,47
+ABS. SYM L8P7 360 SV C/A                  | 172579  |       1        5          8,00         11,50        11,50         1,60
+ABS. SYM L8PA 360 SC C/A                  | 169950  |       1       26         33,80         49,40        49,40         1,30
+ACESSORIO P/UNHA IMPALA R.DUI-021I        | 138052  |       1        3          7,14         10,80        10,80         2,38
+ACQUAFLORA COMPLEXO RECONSTRUTOR 60ML     | 056285  |       1        4         54,16         82,00        82,00        13,54
+ACQUAFLORA CONCENTRADO QUERATINA 20ML     | 056323  |       1       38        108,68        171,00       171,00         2,86
+ACQUAFLORA COND.240ML S.O.S               | 206023  |       1        3         54,90         88,50        88,50        18,30
+ACQUAFLORA COND.300ML ANTIOX.NOR/MISTO    | 073759  |       1       17        230,18        390,83       390,83        13,54
+ACQUAFLORA COND.300ML ANTIOX.SEC/DANIF    | 073767  |       1       16        216,64        367,84       367,84        13,54
+ACQUAFLORA COND.300ML EFEITO LISO         | 056056  |       1        6         89,40        137,94       137,94        14,90
+MARKAO COSMETICOS                                                                                                   Qua    0002/0002
+Gestao Comercial                                     ++ RELATORIO FINANCEIRO DO ESTOQUE ++                          22/04/2015 16:52
+----------------------------------------------------------------------------------------------------------------------------ESTOQF--
+
+ACQUAFLORA COND.300ML EQ.OLEO.NOR/MIS     | 073732  |       1        7         90,02        160,93       160,93        12,86
+ACQUAFLORA COND.300ML EQ.QUEDA NOR/MIS    | 081514  |       1        6         85,32        137,94       137,94        14,22
+ACQUAFLORA COND.300ML FORMA               | 073724  |       1       12        170,64        275,88       275,88        14,22
+ACQUAFLORA COND.300ML HID.INTENSIVA       | 055980  |       1       11        156,42        252,89       252,89        14,22
+ACQUAFLORA COND.300ML NUTR.CELULAR        | 056021  |       1       13        184,86        298,87       298,87        14,22
+ACQUAFLORA COND.300ML POS COLORACAO       | 188742  |       1        9        146,34        224,91       224,91        16,26
+ACQUAFLORA COND.300ML POS PROGRESSIVA     | 217688  |       1        6         97,56        156,00       156,00        16,26
+ACQUAFLORA COND.300ML RECONSTRUTOR        | 055971  |       1       22        312,84        505,78       505,78        14,22
+ACQUAFLORA COND.300ML REEQU.ESTRUTURAL    | 073740  |       1       14        208,60        321,86       321,86        14,90
+ACQUAFLORA EE CREAM 240ML S.O.S           | 206031  |       1       10        183,00        295,00       295,00        18,30
+ACQUAFLORA FLUIDO 120ML POS PROGRESSIVA   | 217696  |       1        6         89,40        143,94       143,94        14,90
+ACQUAFLORA FLUIDO 120ML PROTETOR          | 097291  |       1       49        596,82        955,50       955,50        12,18
+ACQUAFLORA FLUIDO 12ML HIDR.INTENSIVA     | 111081  |       1       46        310,04        483,00       483,00         6,74
+ACQUAFLORA FLUIDO 12ML MATIZADOR          | 197997  |       1       25        168,50        262,50       262,50         6,74
+ACQUAFLORA FLUIDO 12ML NUT.CELULAR        | 056331  |       1       85        572,90        892,50       892,50         6,74
+ACQUAFLORA FLUIDO 12ML POS COLORACAO      | 193002  |       1       22        148,28        231,00       231,00         6,74
+ACQUAFLORA FLUIDO 60ML REEQ.ESTRUTURAL    | 056307  |       1        2         27,08         41,98        41,98        13,54
+ACQUAFLORA GLOSS  60ML P/CABELOS          | 056277  |       1        6         85,32        129,00       129,00        14,22
+ACQUAFLORA HID.S/ENX.240ML CONT.VOLUME    | 056161  |       1       15        213,30        329,85       329,85        14,22
+ACQUAFLORA HID.S/ENX.240ML EFEITO.LISO    | 056153  |       1       13        184,86        285,87       285,87        14,22
+ACQUAFLORA HID.S/ENX.240ML FORMA          | 073830  |       1       17        241,74        373,83       373,83        14,22
+ACQUAFLORA HID.S/ENX.240ML INTENSIVO      | 056072  |       1       14        199,08        307,86       307,86        14,22
+ACQUAFLORA HID.S/ENX.240ML NUT.CELULAR    | 056129  |       1       15        213,30        329,85       329,85        14,22
+ACQUAFLORA HID.S/ENX.240ML POS COLORACAO  | 188769  |       1        8        113,76        175,92       175,92        14,22
+ACQUAFLORA HID.S/ENX.240ML RECONSTRUTOR   | 056102  |       1       12        170,64        263,88       263,88        14,22
+ACQUAFLORA HID.S/ENX.240ML REEQUI.ESTRUT  | 073821  |       1        8        113,76        175,92       175,92        14,22
+ACQUAFLORA KIT SELANTE VEGETAL            | 154864  |       1        1         40,72         62,00        62,00        40,72
+ACQUAFLORA LEITE DE ARGAN 12ML            | 133913  |       1       10         67,40        125,00       125,00         6,74
+ACQUAFLORA MASC.HID.250G ANTIOXIDANTE     | 073848  |       1       15        223,50        352,50       352,50        14,90
+ACQUAFLORA MASC.HID.250G CONT.VOLUME      | 056250  |       1        6         89,40        141,00       141,00        14,90
+ACQUAFLORA MASC.HID.250G EFEITO.LISO      | 056234  |       1       17        253,30        399,50       399,50        14,90
+ACQUAFLORA MASC.HID.250G ELIXIR           | 129967  |       1       11        171,38        258,50       258,50        15,58
+ACQUAFLORA MASC.HID.250G INTENSIVA        | 056188  |       1       20        298,00        470,00       470,00        14,90
+ACQUAFLORA MASC.HID.250G NUT.CELULAR      | 056196  |       1       22        327,80        517,00       517,00        14,90
+ACQUAFLORA MASC.HID.250G POS COLORACAO    | 188750  |       1       10        155,80        235,00       235,00        15,58
+ACQUAFLORA MASC.HID.250G RECONSTRUTORA    | 056218  |       1        1         14,90         23,50        23,50        14,90
+ACQUAFLORA MASC.HID.250G REE.ESTRUTURAL   | 097216  |       1       31        482,98        728,50       728,50        15,58
+ACQUAFLORA REPARADOR ELIXIR 60ML          | 122482  |       1       15        233,70        374,85       374,85        15,58
+ACQUAFLORA SERUM TERMO ATIV. 60ML         | 056315  |       1       29        412,38        623,50       623,50        14,22
+ACQUAFLORA SH.240ML POS COLORACAO         | 188777  |       1        6         97,56        156,00       156,00        16,26
+ACQUAFLORA SH.240ML S.O.S                 | 206015  |       1        9        146,34        233,91       233,91        16,26
+ACQUAFLORA SH.300ML ANT.OX.NOR/MISTOS     | 073716  |       1       17        207,06        373,83       373,83        12,18
+ACQUAFLORA SH.300ML ANT.OX.SEC/DANIFIC    | 073708  |       1       10        121,80        219,90       219,90        12,18
+ACQUAFLORA SH.300ML EFEITO LISO           | 055939  |       1        7         94,78        153,93       153,93        13,54
+ACQUAFLORA SH.300ML EQ.OLEO.NOR/MISTO     | 073643  |       1       13        158,34        285,87       285,87        12,18
+ACQUAFLORA SH.300ML EQ.OLEO.SEC/DANIF     | 073651  |       1        5         60,90        109,95       109,95        12,18
+ACQUAFLORA SH.300ML EQ.QUEDA NOR/MISTO    | 081506  |       1       12        162,48        263,88       263,88        13,54
+ACQUAFLORA SH.300ML EQ.RESIDUOS           | 081450  |       1       17        207,06        373,83       373,83        12,18
+ACQUAFLORA SH.300ML FORMA                 | 073660  |       1        6         77,16        131,94       131,94        12,86
+ACQUAFLORA SH.300ML HIDRAT.INTENSIVA      | 055840  |       1       19        244,34        417,81       417,81        12,86
+ACQUAFLORA SH.300ML LIGHT                 | 097232  |       1        7         90,02        153,93       153,93        12,86
+ACQUAFLORA SH.300ML NUT.CELULAR           | 055904  |       1       20        257,20        439,80       439,80        12,86
+ACQUAFLORA SH.300ML POS PROGRESSIVA       | 217670  |       1        7        113,82        182,00       182,00        16,26
+ACQUAFLORA SH.300ML RECONSTRUTOR          | 055866  |       1       21        270,06        461,79       461,79        12,86
+ACQUAFLORA SH.300ML REEQ.ESTRUTURAL       | 073678  |       1       24        324,96        527,76       527,76        13,54
