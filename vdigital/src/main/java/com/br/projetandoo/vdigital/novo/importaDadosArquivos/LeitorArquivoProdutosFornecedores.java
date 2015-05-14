@@ -1,4 +1,4 @@
-package com.br.projetandoo.vdigital.novo;
+package com.br.projetandoo.vdigital.novo.importaDadosArquivos;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -7,17 +7,17 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.commons.lang3.StringUtils;
 
 import com.br.projetandoo.vdigital.model.Produto;
 
-public class LeitorArquivoProdutosFornecedores implements LeitorArquivo {
+public class LeitorArquivoProdutosFornecedores {
 
+	private static final String PREFIX_CABECALHO        = "\\00\\00";
+	private static final String PREFIX_FINAL_ARQUIVO    = "-----";
+	private static final String PREFIX_PRODUTO_INVALIDO = " SALDO DE BALANCO";
+	
 	private List<Produto> produtos = new ArrayList<Produto>();
-
-	private static final Logger LOG = LoggerFactory.getLogger(LeitorArquivoProdutosFornecedores.class);
-
 
 	public List<Produto> leArquivo(String arquivo) throws IOException {
 
@@ -26,17 +26,32 @@ public class LeitorArquivoProdutosFornecedores implements LeitorArquivo {
 		String linha = buffReader.readLine();
 
 		while (linha != null) {
-
-			if (linha.startsWith("\\00\\00")) {
+			//headers
+			if (linha.startsWith(PREFIX_CABECALHO)) {
 				for (int i = 1; i <= 8; i++) {
 					linha = buffReader.readLine();
 				}
 			}
-			String nome = linha.substring(1, 41).trim();
-			String codigo = linha.substring(43, 50).trim();
-			String estoque = linha.substring(51, 57).trim();
-			String codBarra = linha.substring(101, 114).trim();
-			String nomeFornecedor = linha.substring(117, 135).trim();
+			if (linha.startsWith(PREFIX_PRODUTO_INVALIDO)) {
+				System.out.println("SALDO DE BALANCO ...próx linha");
+				linha = buffReader.readLine();
+				continue;
+			}			
+			//footer
+			if (linha.startsWith(PREFIX_FINAL_ARQUIVO)) {
+				buffReader.close();
+				return produtos;
+			}
+			
+			String[] items = StringUtils.split(linha, "|");
+			
+			String nome = items[0].trim();
+			String codigo = items[1].trim();
+			String estoque = items[2].substring(0, 6).trim();
+			String codBarra = items[7].trim();
+			String nomeFornecedor = items[8].trim();
+			
+			System.out.println(nome + "\t" + codigo + "\t[" + estoque + "]\t[" + codBarra + "]\t" + nomeFornecedor);
 
 			Produto produto = atualizaValoresProduto(nome, codigo, estoque, codBarra, nomeFornecedor);
 
@@ -45,7 +60,6 @@ public class LeitorArquivoProdutosFornecedores implements LeitorArquivo {
 		}
 
 		buffReader.close();
-
 		return produtos;
 	}
 

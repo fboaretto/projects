@@ -175,3 +175,6 @@ Gestao Comercial                                                    Qualquer    
  ACQUAFLORA SH.300ML ANT.OX.NOR/MISTOS   | 073716 |    17,000| UN |   36,000 |     ,000 |    53,000| 7898943477194 | ACQUAFLORA        
  ACQUAFLORA SH.300ML ANT.OX.SEC/DANIFIC  | 073708 |    10,000| UN |   12,000 |     ,000 |    22,000| 7898943477217 | ACQUAFLORA        
  ACQUAFLORA SH.300ML CONT.VOLUME         | 055947 |          | UN |     ,000 |     ,000 |          | 7898903652487 | ACQUAFLORA        
+-----------------------------------------+--------+----------+----+----------+----------+----------+---------------+-------------------
+ TOTAL DO FORNECEDOR ACIMA               |  17477 |    167147  |    |     42519 |         0 |   209427  |                              
+ TOTAL DA FILIAL ACIMA                   |  17477 |    167147  |    |     42519 |         0 |   209427  |                              
