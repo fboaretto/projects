@@ -11,6 +11,8 @@ public class ItemCompra {
 	private int quantidade;
 	
 	private BigDecimal preco;
+	
+	private String nomeProduto;
 
 	
 	public Long getId() {
@@ -43,6 +45,14 @@ public class ItemCompra {
 
 	public void setPreco(BigDecimal preco) {
 		this.preco = preco;
+	}
+
+	public String getNomeProduto() {
+		return nomeProduto;
+	}
+
+	public void setNomeProduto(String nomeProduto) {
+		this.nomeProduto = nomeProduto;
 	}
 	
 }

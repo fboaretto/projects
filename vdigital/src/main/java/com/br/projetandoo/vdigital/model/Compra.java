@@ -6,21 +6,29 @@ import java.util.Date;
 import java.util.HashSet;
 
 public class Compra {
-	
+
 	private Long id;
-	
+
 	private Date dataCompra;
-	
-	private int numero;
-	
+
+	private String numero;
+
 	private String tipoOperacao;
-	
+
 	private int caixa;
-	
+
 	private BigDecimal total;
-	
+
 	private Collection<ItemCompra> items = new HashSet<ItemCompra>();
-	
+
+
+	@Override
+	public String toString() {
+		return "Compra [id=" + id + ", dataCompra=" + dataCompra + ", numero="
+				+ numero + ", tipoOperacao=" + tipoOperacao + ", caixa="
+				+ caixa + ", total=" + total + ", items=" + items + "]";
+	}
+
 
 	public Long getId() {
 		return id;
@@ -38,11 +46,11 @@ public class Compra {
 		this.dataCompra = dataCompra;
 	}
 
-	public int getNumero() {
+	public String getNumero() {
 		return numero;
 	}
 
-	public void setNumero(int numero) {
+	public void setNumero(String numero) {
 		this.numero = numero;
 	}
 
@@ -77,5 +85,5 @@ public class Compra {
 	public void setCaixa(int caixa) {
 		this.caixa = caixa;
 	}
-	
+
 }
